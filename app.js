@@ -2,10 +2,12 @@ require('dotenv').config();
 var express = require("express");
 var path = require("path");
 const session = require('express-session');
-
 var indexRouter = require("./routes/index");
 
+
+
 var app = express();
+
 // Base path for all internal links and static assets in templates
 app.locals.basePath = '/ontario-fertility';
 
@@ -15,7 +17,10 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs"); //using EJS
 
 // Middleware
-app.use("/static", express.static(path.join(__dirname, "public"))); //set up path for static file
+// app.use("/static", express.static(path.join(__dirname, "public"))); 
+app.use(app.locals.basePath + "/static", express.static(path.join(__dirname, "public"))); //set up path for static file
+app.use("/static", express.static(path.join(__dirname, "public")));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -30,6 +35,6 @@ app.use(session({
 
 
 // Routes
+app.use(app.locals.basePath, indexRouter);
 app.use("/", indexRouter);
-
 module.exports = app;
