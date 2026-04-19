@@ -8,14 +8,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
-	<link rel="stylesheet" href="/static/styles/layout.css">
+	<link rel="stylesheet" href="<%= basePath %>/static/styles/layout.css">
 	<title><%= typeof title !== 'undefined' ? title : 'Ontario Fertility Journey' %></title>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md fixed-top site-nav">
 			<div class="container">
-				<a class="navbar-brand site-logo" href="/">
+				<a class="navbar-brand site-logo" href="<%= basePath %>/">
 					<span class="logo-accent">Ontario</span> Fertility Journey
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -23,11 +23,11 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="mainNav">
 					<ul class="navbar-nav gap-1">
-						<li class="nav-item"><a class="nav-link" href="/#overview">Overview</a></li>
-						<li class="nav-item"><a class="nav-link" href="/stage1">Before the GP</a></li>
-						<li class="nav-item"><a class="nav-link" href="/stage2">Investigative Cycle</a></li>
-						<li class="nav-item"><a class="nav-link" href="/stage3">Treatment & Funding</a></li>
-						<!-- <li class="nav-item"><a class="nav-link" href="/#about">About</a></li> -->
+						<li class="nav-item"><a class="nav-link" href="<%= basePath %>/#overview">Overview</a></li>
+						<li class="nav-item"><a class="nav-link" href="<%= basePath %>/stage1">Before the GP</a></li>
+						<li class="nav-item"><a class="nav-link" href="<%= basePath %>/stage2">Investigative Cycle</a></li>
+						<li class="nav-item"><a class="nav-link" href="<%= basePath %>/stage3">Treatment & Funding</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="<%= basePath %>/#about">About</a></li> -->
 					</ul>
 				</div>
 			</div>
