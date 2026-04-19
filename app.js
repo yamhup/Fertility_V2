@@ -6,6 +6,8 @@ const session = require('express-session');
 var indexRouter = require("./routes/index");
 
 var app = express();
+// Base path for all internal links and static assets in templates
+app.locals.basePath = '/ontario-fertility';
 
 
 // View engine
