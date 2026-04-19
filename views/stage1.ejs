@@ -1,0 +1,366 @@
+<%- include('partials/header.ejs') %>
+
+<section class="stage-banner">
+	<div class="container">
+		<div class="stage-header">
+			<div>
+				<p class="section-label">Stage One</p>
+				<h1 class="section-title">Before You See the Family Doctor</h1>
+			</div>
+		</div>
+		<p class="section-intro">This is the step most resources skip entirely. Booking a Family Doctor/General 
+			Practitioner (GP) appointment can take two weeks or more, so before you even make that call, you should 
+			already know what qualifies as infertility, which fertility clinics are accessible from where you live 
+			and work, and what to bring up with your doctor.</p>
+		<%- include('partials/stage1-steps') %>
+	</div>
+</section>
+
+<section class="section-light">
+	<div class="container">
+
+		<div class="info-block">
+			<h4>How Ontario Defines Infertility</h4>
+			<p>
+				Infertility is generally defined as the inability to conceive after 12 months of regular, unprotected 
+				intercourse for individuals under 35, or after 6 months for those 35 and older. Age is one of the most
+				significant factors in fertility outcomes, which is why timelines are critical.
+			</p>
+			<p>
+				Approximately <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7008682/" target="_blank" 
+				class="green-text">one in six couples</a> in Ontario will experience infertility and require assisted reproductive 
+				technology (ART) to achieve pregnancy.
+			</p>
+			<div class="text-center my-3">
+				<img src="/static/images/2.png" alt="Illustration of couples" style="width: 100%;">
+			</div>
+			<p class="mt-2">
+				You don't need to wait for a formal diagnosis to start the conversation with your family 
+				doctor. If you suspect something may be affecting your ability to conceive, that's reason enough to 
+				ask for a referral. Even if you don't have an <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP 
+				(Ontario Health Insurance Plan) is Ontario's publicly funded health insurance, available to eligible Ontario 
+				residents at no cost.">OHIP</span> card, you can still access fertility clinics. Some clinics accept self-referrals, 
+				but all costs would be out of pocket.
+			</p>
+		</div>
+
+		<div class="row g-4">
+			<div class="col-md-6 d-flex">
+				<div class="highlight-box">
+					<strong>Getting started doesn't cost you anything.</strong> 
+					<br>Your family doctor visit, the referral, your first consultation with the fertility specialist, 
+					and most diagnostic tests (blood work, ultrasound, etc.) are all covered by <span class="ohip-tip" data-bs-toggle="tooltip" 
+					title="OHIP (Ontario Health Insurance Plan) is Ontario's publicly funded health insurance, available to eligible Ontario 
+					residents at no cost.">OHIP</span>. Out-of-pocket costs 
+					only begin later if you move into treatments like IUI or IVF.
+				</div>
+			</div>
+			<div class="col-md-6 d-flex">
+				<div class="highlight-box">
+					<strong>Why choosing a fertility clinic early matters:</strong>
+					<br>Once you enter the publicly funded stream, waitlists are inevitable. Fertility clinic experiences 
+					vary widely, and even your family doctor may not have a specific recommendation. They may simply ask 
+					which clinic you'd like to be referred to. If you don't have an answer, you'll need to go home, 
+					research on your own, and come back with a preference before the referral can be sent. That back-and-forth 
+					costs valuable time. If you already know which clinic you want, your referral can go out the same day.
+				</div>
+			</div>
+		</div>
+
+		<div class="info-block">
+			<h4>You Have the Right to Choose Your Clinic</h4>
+			<p>Most clinic websites focus on marketing rather than educating. They want you to pick <em>their</em> clinic. But the truth 
+				is: you have a choice, and your decision should factor in practical realities that will affect your daily life for months.
+			</p>
+			<p class="mt-2">
+				During the investigative cycle, you may need to go back for blood work and ultrasounds multiple times in a single 
+				menstrual cycle. Consider:
+			</p>
+			<ul>
+				<li>How far is the clinic from your home and workplace?</li>
+				<li>Can you get there early in the morning for time-sensitive blood work?</li>
+				<li>Is there parking, or is it transit-accessible?</li>
+				<li>Will the commute be sustainable over weeks or months?</li>
+			</ul>
+		</div>
+
+		<div class="info-block clinic-section">
+			<h4>Ontario Participating Fertility Clinics by Region</h4>
+			<p>
+				The following clinics participate in the Ontario Fertility Program (OFP). Services vary by location — 
+				<strong>AI/IUI</strong> (artificial/intrauterine insemination), <strong>IVF</strong> (in vitro fertilization), 
+				and <strong>FP</strong> (fertility preservation). Click a region to view clinics.
+			</p>
+
+			<div class="accordion mt-3" id="clinicAccordion">
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#toronto">Toronto</button>
+					</h2>
+					<div id="toronto" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://anovafertility.com" target="_blank">Anova Fertility & Reproductive Health</a><br><small class="clinic-phone">416-225-4440</small></td><td>25 Sheppard Ave. West, Suites 650 & 690</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://createivf.com" target="_blank">CReATe Fertility Centre</a><br><small class="clinic-phone">416-323-7727</small></td><td>790 Bay Street, Suite 1100</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td>Dr. Anthony Auyeung<br><small class="clinic-phone">416-260-2004</small></td><td>180 Bloor Street West, Suite 201</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://generationfertility.ca" target="_blank">Generation Fertility Toronto West</a><br><small class="clinic-phone">416-233-8111</small></td><td>56 Aberfoyle Crescent, Suite 300</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://hannamfertility.com" target="_blank">Hannam Fertility Centre</a><br><small class="clinic-phone">416-595-1521</small></td><td>160 Bloor Street East, Suite 1500</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://mountsinaifertility.com" target="_blank">Mount Sinai Fertility</a><br><small class="clinic-phone">416-586-4748</small></td><td>250 Dundas Street West, 7th Floor</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://www.pollinfertility.com" target="_blank">Pollin Fertility Clinic</a><br><small class="clinic-phone">416-342-3552</small></td><td>2360 Yonge Street, 2nd Floor</td><td>IVF/FP</td></tr>
+								<tr><td><a href="https://www.twigfertility.com" target="_blank">Twig Fertility</a><br><small class="clinic-phone">416-855-8944</small></td><td>313 Eglinton Avenue West</td><td>IVF/FP</td></tr>
+								<tr><td><a href="https://triofertility.com" target="_blank">TRIO Fertility</a><br><small class="clinic-phone">416-506-0804</small></td><td>655 Bay Street, 11th and 18th Floor</td><td>AI/IUI/IVF/FP</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#northyork">North York / Scarborough</button>
+					</h2>
+					<div id="northyork" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://mcfreproductive.com" target="_blank">MCF Reproductive & Health Services</a><br><small class="clinic-phone">416-221-4602</small></td><td>2888 Bathurst Street, Suite 100, North York</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://www.createivf.com" target="_blank">Create Fertility Centre North York</a><br><small class="clinic-phone">416-283-5539</small></td><td>4025 Yonge Street, Suite 215, North York</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://www.tripodfertility.com" target="_blank">Tripod Fertility</a><br><small class="clinic-phone">905-201-3420</small></td><td>2225 Sheppard Avenue East, Suite 901, North York</td><td>IVF/FP</td></tr>
+								<tr><td><a href="https://hopefertility.ca" target="_blank">Hope Fertility</a><br><small class="clinic-phone">416-609-8868</small></td><td>2330 Kennedy Road, Suite 317, Scarborough</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://ivfcanada.com" target="_blank">IVF Canada & The Life Program</a><br><small class="clinic-phone">416-754-1010</small></td><td>2347 Kennedy Road, Suite 304, Scarborough</td><td>AI/IUI/IVF/FP</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etobicoke">Etobicoke</button>
+					</h2>
+					<div id="etobicoke" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td>Etobicoke Fertility Centre<br><small class="clinic-phone">416-741-9900</small></td><td>110 Queen's Plate Drive</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://charmfertility.com" target="_blank">CHARM Fertility</a><br><small class="clinic-phone">416-748-2800</small></td><td>101 Westmore Drive, Suite 201</td><td>AI/IUI</td></tr>
+								<tr><td>Create West Fertility Inc.<br><small class="clinic-phone">416-231-4100</small></td><td>56 Aberfoyle Crescent, Suite 100</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#yorkregion">York Region (Markham / Richmond Hill / Vaughan / Concord / Newmarket)</button>
+					</h2>
+					<div id="yorkregion" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://www.ivfcanada.com" target="_blank">IVF Canada Markham</a><br><small class="clinic-phone">905-597-7661</small></td><td>7191 Yonge Street, Suite 111, Markham</td><td>IVF/FP</td></tr>
+								<tr><td><a href="https://markhamfertility.com" target="_blank">Markham Fertility Centre</a><br><small class="clinic-phone">905-472-7128</small></td><td>379 Church Street, 5th Floor, Markham</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://nahalfertility.com" target="_blank">Nahal Fertility Program</a><br><small class="clinic-phone">905-482-3389</small></td><td>30 Wertheim Court, Suite 22, Richmond Hill</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre</a><br><small class="clinic-phone">905-896-7100</small></td><td>670 Highway 7 East, Suite 8, Richmond Hill</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://generationfertility.ca" target="_blank">Generation Fertility Vaughan</a><br><small class="clinic-phone">289-357-0100</small></td><td>955 Major Mackenzie Drive West, Suite 400, Vaughan</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://harmonywomensclinic.com" target="_blank">Harmony Fertility</a><br><small class="clinic-phone">905-884-6119</small></td><td>1600 Steeles Avenue West, Suite 25, Concord</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre Concord</a><br><small class="clinic-phone">905-896-7100</small></td><td>8760 Jane Street, Unit 101, Concord</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://generationfertility.ca" target="_blank">Generation Fertility Newmarket</a><br><small class="clinic-phone">905-967-0852</small></td><td>1111 Davis Drive East, Unit 39, Newmarket</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#peelregion">Peel Region (Mississauga / Brampton)</button>
+					</h2>
+					<div id="peelregion" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://astrafertility.com" target="_blank">ASTRA Fertility</a><br><small class="clinic-phone">905-949-6999</small></td><td>4303 Village Centre Court, Mississauga</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://mountsinaifertility.com" target="_blank">Mount Sinai Fertility (Mississauga-Oakville)</a><br><small class="clinic-phone">905-901-5123</small></td><td>800 Southdown Road, Suite A4, Mississauga</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre</a><br><small class="clinic-phone">905-896-7100</small></td><td>4250 Sherwoodtowne Boulevard, Mississauga</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://rccfertility.com" target="_blank">The Reproductive Care Centre (RCC)</a><br><small class="clinic-phone">905-816-9822</small></td><td>2180 Meadowvale Boulevard, Mississauga</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://charmfertility.com" target="_blank">CHARM Fertility Brampton</a><br><small class="clinic-phone">905-457-8558</small></td><td>244 Queen Street East, Brampton</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre Brampton</a><br><small class="clinic-phone">905-896-7100</small></td><td>Unit 210, 2 Dewside Drive, Brampton</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#haltonregion">Halton Region (Burlington / Oakville / Milton)</button>
+					</h2>
+					<div id="haltonregion" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://onefertility.com" target="_blank">ONE Fertility Burlington</a><br><small class="clinic-phone">905-634-4440</small></td><td>3210 Harvester Road, Burlington</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre Burlington</a><br><small class="clinic-phone">905-896-7100</small></td><td>418 Plains Road East, Burlington</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://triofertility.com" target="_blank">TRIO Fertility Burlington</a><br><small class="clinic-phone">905-731-3860</small></td><td>3115 Harvester Road, Suite 301, Burlington</td><td>IVF/FP</td></tr>
+								<tr><td><a href="https://charmfertility.com" target="_blank">CHARM Fertility Oakville</a><br><small class="clinic-phone">905-844-7238</small></td><td>627 Lyons Lane, Level B, Oakville</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre Milton</a><br><small class="clinic-phone">905-896-7100</small></td><td>470 Bronte Street South, Suite 201, Milton</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#durhamregion">Durham Region (Oshawa / Whitby)</button>
+					</h2>
+					<div id="durhamregion" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://www.createivf.com" target="_blank">Create Durham Fertility Centre</a><br><small class="clinic-phone">905-721-3582</small></td><td>117 King Street East, Oshawa</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://dreamfertility.ca" target="_blank">DREAM Fertility</a><br><small class="clinic-phone">905-721-2161</small></td><td>198 Des Newman Boulevard, Whitby</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://lakeridgefertility.com" target="_blank">Lakeridge Fertility</a></td><td>220 Dundas Street West, Suite 404, Whitby</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hamilton">Hamilton / Niagara</button>
+					</h2>
+					<div id="hamilton" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://newlifefertility.com" target="_blank">NewLife Fertility Centre Hamilton</a><br><small class="clinic-phone">905-972-8382</small></td><td>1057 Main Street West, Suite 102, Hamilton</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://ontariofertilitynetwork.com" target="_blank">Niagara Fertility at Stoney Creek</a><br><small class="clinic-phone">905-662-3139</small></td><td>821 North Service Road, Unit 103, Stoney Creek</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kitchener">Kitchener-Waterloo</button>
+					</h2>
+					<div id="kitchener" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://onefertilitykitchenerwaterloo.com" target="_blank">ONE Fertility Kitchener-Waterloo</a><br><small class="clinic-phone">519-650-0011</small></td><td>4271 King Street East, Suite 200, Kitchener</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://generationfertility.ca/waterloo" target="_blank">Generation Fertility Waterloo</a><br><small class="clinic-phone">519-570-0090</small></td><td>435 The Boardwalk, Suite 508, Waterloo</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://triofertility.com" target="_blank">TRIO Fertility Waterloo</a><br><small class="clinic-phone">519-585-1796</small></td><td>430 The Boardwalk, Waterloo</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#barrie">Barrie / Orillia</button>
+					</h2>
+					<div id="barrie" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://barriefertilitycentre.com" target="_blank">Barrie Fertility Centre</a><br><small class="clinic-phone">705-728-7784</small></td><td>1 Quarry Ridge Road, Suite 201, Barrie</td><td>AI/IUI</td></tr>
+								<tr><td>Horizon Fertility<br><small class="clinic-phone">705-558-2331</small></td><td>16 O'Brien Street, Suite 103, Orillia</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#london">London</button>
+					</h2>
+					<div id="london" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://omegafertility.ca" target="_blank">OMEGA Fertility Center</a><br><small class="clinic-phone">519-685-5559</small></td><td>373 Commissioners Road West</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td><a href="https://omegafertility.ca" target="_blank">OMEGA Fertility Center (East)</a><br><small class="clinic-phone">519-685-5559</small></td><td>555 Southdale Road East, Suite 107</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ottawa">Ottawa</button>
+					</h2>
+					<div id="ottawa" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td><a href="https://conceive.ca" target="_blank">Ottawa Fertility Centre</a><br><small class="clinic-phone">613-686-3378</small></td><td>955 Green Valley Crescent, Suite 200</td><td>AI/IUI/IVF/FP</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#windsor">Windsor / Sarnia</button>
+					</h2>
+					<div id="windsor" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td>Dr. Rahal Fertility Clinic<br><small class="clinic-phone">519-944-6400</small></td><td>8100 Twin Oaks Drive, Windsor</td><td>AI/IUI</td></tr>
+								<tr><td><a href="https://drvictory.com" target="_blank">Victory Reproductive Care</a><br><small class="clinic-phone">519-944-6400</small></td><td>8100 Twin Oaks Drive, Windsor</td><td>AI/IUI/IVF/FP</td></tr>
+								<tr><td>Victory Reproductive Care (Sarnia)<br><small class="clinic-phone">519-491-6080</small></td><td>105-704 Mara Street, Point Edward</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#northern">Northern Ontario</button>
+					</h2>
+					<div id="northern" class="accordion-collapse collapse" data-bs-parent="#clinicAccordion">
+						<div class="accordion-body p-0">
+							<div class="table-responsive"><table class="table clinic-table mb-0"><thead><tr><th>Clinic</th><th>Address</th><th>Services</th></tr></thead><tbody>
+								<tr><td>NEO Fertility Services<br><small class="clinic-phone">705-222-0492</small></td><td>1596 Regent Street, Sudbury</td><td>IUI</td></tr>
+								<tr><td>North Shore Fertility Centre<br><small class="clinic-phone">807-346-1000</small></td><td>194 Court Street North, Thunder Bay</td><td>AI/IUI</td></tr>
+							</tbody></table></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<p class="text-muted small mt-3">Source from Ontario Ministry of Health. Wait times vary by clinic. Each clinic manages its own waitlist and prioritizes patients based on the physician's clinical judgment.</p>
+		</div>
+
+		<div class="info-block">
+			<h4>Preparing for Your GP Appointment</h4>
+			<p>Family doctor appointments are short. Don't go in unprepared. Here's what to have ready:</p>
+			<ul>
+				<li><strong>Your timeline</strong> — How long have you been trying? Note the date you started.</li>
+				<li><strong>Menstrual cycle info</strong> — Average cycle length, regularity, any changes.</li>
+				<li><strong>Any relevant medical history</strong> — Previous surgeries, conditions (PCOS, endometriosis, thyroid), medications.</li>
+				<li><strong>Your clinic preference</strong> — You can ask your family doctor if they recommend a specific fertility clinic, or research on your own using the clinic list above. Consider which clinics are closest to your home or workplace, since you'll need frequent visits. You can also check Google Maps reviews from other patients. For government-funded treatment waitlist times, you'll need to call each clinic directly — most clinics don't publish this information online.</li>
+			</ul>
+		</div>
+
+		<div class="initial-specialist-box">
+			<h5>What Happens After the Referral</h5>
+			<p>
+				Once you and your family doctor have decided on a clinic, the referral will be sent. From here, you'll 
+				wait for the clinic to contact you. This is usually a phone call from the clinic's intake team. They may 
+				ask which fertility specialist you'd like to see at their clinic. If you don't have a preference, they 
+				will assign one for you.
+			</p>
+			<p class="mt-2">
+				The clinic will also ask for your email address and send you intake forms, consent documents, and other 
+				paperwork to complete online before your first visit.
+			</p>
+			<p class="mt-2">
+				Your first appointment with the fertility specialist can be in-person or virtual, depending on the clinic. 
+				Both you and your partner are usually expected to attend. Expect the consultation to last about 30 to 45 minutes.
+			</p>
+			<p class="mt-2">
+				Some clinics will send forms ahead of time so you can fill in your medical history and basic information 
+				before the visit, which helps the clinic set up your file. Keep in mind that some specialists may not go 
+				into detail about the investigative process during this first meeting. Between answering your questions 
+				and covering other topics, the time can go by quickly.
+			</p>
+		</div>
+
+		<div class="text-center mt-5">
+			<a href="/stage2" class="btn btn-outline-sage">Next: The Investigative Cycle →</a>
+		</div>
+	</div>
+</section>
+
+</main>
+<%- include('partials/footer.ejs') %>
