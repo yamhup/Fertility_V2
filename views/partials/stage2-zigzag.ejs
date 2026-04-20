@@ -1,287 +1,346 @@
-<!-- Investigative Cycle: Zigzag Timeline -->
-<section class="zigzag-timeline py-5">
+<!-- Investigative Cycle: Test Grid -->
+<section class="test-grid-section py-5">
   <div class="container">
-    <div class="zz">
-      <div class="zz-line"></div>
+
+    <!-- Group 1: Tests for the person being tested -->
+    <h6 class="test-grid__group-label">Tests you'll likely have</h6>
+    <div class="test-grid">
 
       <!-- Step 1: Screening Blood Work -->
-      <div class="zz-step zz-left">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--sage">Cycle day 3</span>
-          <h5 class="zz-title zz-title--sage">Screening blood work + hormone panel</h5>
-          <p class="zz-desc">Around 6 vials covering immunities, hepatitis, HIV, plus FSH, LH, Estradiol, TSH, and Prolactin. All covered by OHIP.</p>
+      <a href="#day3" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--sage">
+            <img src="<%= basePath %>/static/images/" alt="Blood work icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--sage">Cycle day 3</span>
+            <h5 class="test-card_title test-card_title--sage">Screening blood work + hormone panel</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--sage">
-          <img src="<%= basePath %>/static/images/" alt="Blood work icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 2: Baseline Ultrasound -->
-      <div class="zz-step zz-right">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--green">Cycle day 3</span>
-          <h5 class="zz-title zz-title--green">Baseline ultrasound</h5>
-          <p class="zz-desc">Full bladder required. External and internal imaging to check antral follicle count, uterine lining, and structural abnormalities. Covered by OHIP.</p>
+      <a href="#day3" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--green">
+            <img src="<%= basePath %>/static/images/" alt="Ultrasound icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--green">Cycle day 3</span>
+            <h5 class="test-card_title test-card_title--green">Baseline ultrasound</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--green">
-          <img src="<%= basePath %>/static/images/" alt="Ultrasound icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 3: Sono -->
-      <div class="zz-step zz-left">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--orange">Cycle day 5 to 11</span>
-          <h5 class="zz-title zz-title--orange">Sono (Sonohysterogram)</h5>
-          <p class="zz-desc">Saline injected during internal ultrasound to check for polyps, fibroids, or uterine issues. Take 2 pain relievers 1 hour before. Covered by OHIP.</p>
-        </div>
-        <div class="zz-circle zz-circle--orange">
+      <a href="#sono" class="test-card-link">
+      <div class="test-card">
+        <div class="test-card_circle test-card_circle--orange">
           <img src="<%= basePath %>/static/images/" alt="Sono icon">
         </div>
-        <div class="zz-spacer"></div>
+        <div class="test-card__content">
+          <span class="test-card_tag test-card_tag--orange">Cycle day 5 to 11</span>
+          <h5 class="test-card_title test-card_title--orange">Sono (Sonohysterogram)</h5>
+          <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+            is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+          </p>
+        </div>
       </div>
+      </a>
 
       <!-- Step 4: Cycle Monitoring -->
-      <div class="zz-step zz-right">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--terra">Cycle day 10 to 18</span>
-          <h5 class="zz-title zz-title--terra">Cycle monitoring</h5>
-          <p class="zz-desc">Every other day for internal ultrasound and blood work. Monitoring hormones and follicle development to pinpoint ovulation. Covered by OHIP.</p>
+      <a href="#cycle-monitoring" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--terra">
+            <img src="<%= basePath %>/static/images/" alt="Cycle monitoring icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--terra">Cycle day 10 to 18</span>
+            <h5 class="test-card_title test-card_title--terra">Cycle monitoring</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--terra">
-          <img src="<%= basePath %>/static/images/" alt="Cycle monitoring icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 5: Progesterone -->
-      <div class="zz-step zz-left">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--navy">Around cycle day 20</span>
-          <h5 class="zz-title zz-title--navy">P4 / Progesterone</h5>
-          <p class="zz-desc">One vial of blood to confirm ovulation. Your nurse will confirm the exact date based on your cycle length. Covered by OHIP.</p>
+      <a href="#progesterone" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--navy">
+            <img src="<%= basePath %>/static/images/" alt="Progesterone icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--navy">Around cycle day 20</span>
+            <h5 class="test-card_title test-card_title--navy">P4 / Progesterone</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--navy">
-          <img src="<%= basePath %>/static/images/" alt="Progesterone icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 6: Beta HCG -->
-      <div class="zz-step zz-right">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--sage">Around cycle day 28</span>
-          <h5 class="zz-title zz-title--sage">Beta HCG / Pregnancy test</h5>
-          <p class="zz-desc">One vial of blood to confirm your Beta HCG level. Your nurse will confirm the exact date. Covered by OHIP.</p>
+      <a href="#beta-hcg" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--sage">
+            <img src="<%= basePath %>/static/images/" alt="Beta HCG icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--sage">Around cycle day 28</span>
+            <span class="test-card_tag test-card_tag--optional">Optional</span>
+            <h5 class="test-card_title test-card_title--sage">Beta HCG / Pregnancy test</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--sage">
-          <img src="<%= basePath %>/static/images/" alt="Beta HCG icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 7: AMH + Vitamin D -->
-      <div class="zz-step zz-left">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--green">Any day</span>
-          <h5 class="zz-title zz-title--green">AMH + Vitamin D</h5>
-          <p class="zz-desc">AMH measures ovarian reserve (~$105). Vitamin D checks levels that affect fertility (~$65). Neither covered by OHIP.</p>
+      <a href="#anytime-tests" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--green">
+            <img src="<%= basePath %>/static/images/" alt="AMH and Vitamin D icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--green">Any day</span>
+            <h5 class="test-card_title test-card_title--green">AMH + Vitamin D</h5>
+            <p class="test-card_desc">Not covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.<br>
+              Around $105 (AMH) + $75 (Vitamin D).</p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--green">
-          <img src="<%= basePath %>/static/images/" alt="AMH and Vitamin D icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
-
-      <!-- Step 8: Semen Analysis -->
-      <div class="zz-step zz-right">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--orange">By appointment</span>
-          <h5 class="zz-title zz-title--orange">Comprehensive semen analysis with strict morphology</h5>
-          <p class="zz-desc">If you have a male partner, they will need to provide a sample. Evaluates sperm count, motility, and shape. Must abstain 3 days before. Appointment required.</p>
-        </div>
-        <div class="zz-circle zz-circle--orange">
-          <img src="<%= basePath %>/static/images/" alt="Semen analysis icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
       <!-- Step 9: Review Appointment -->
-      <div class="zz-step zz-left">
-        <div class="zz-content">
-          <span class="zz-tag zz-tag--terra">After day 21</span>
-          <h5 class="zz-title zz-title--terra">Review appointment</h5>
-          <p class="zz-desc">Your doctor reviews all results, determines your type of infertility, and creates a treatment plan. Can be done online or in person.</p>
+      <a href="#review" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--terra">
+            <img src="<%= basePath %>/static/images/" alt="Review appointment icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--terra">After all tests are complete</span>
+            <h5 class="test-card_title test-card_title--terra">Review appointment</h5>
+            <p class="test-card_desc">Covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.
+            </p>
+          </div>
         </div>
-        <div class="zz-circle zz-circle--terra">
-          <img src="<%= basePath %>/static/images/" alt="Review appointment icon">
-        </div>
-        <div class="zz-spacer"></div>
-      </div>
+      </a>
 
     </div>
+    <!-- Group 2: Tests for male partner (if applicable) -->
+    <h6 class="test-grid__group-label">For your male partner (if applicable)</h6>
+    <div class="test-grid test-grid--two">
+
+      <!-- Step 8: Semen Analysis -->
+      <a href="#anytime-tests" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--orange">
+            <img src="<%= basePath %>/static/images/" alt="Semen analysis icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--orange">By appointment</span>
+            <h5 class="test-card_title test-card_title--orange">Semen analysis</h5>
+            <p class="test-card_desc">Not covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.<br>
+              Around $160.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Step 10: Vitamin D (male) -->
+      <a href="#anytime-tests" class="test-card-link">
+        <div class="test-card">
+          <div class="test-card_circle test-card_circle--green">
+            <img src="<%= basePath %>/static/images/" alt="Vitamin D icon">
+          </div>
+          <div class="test-card__content">
+            <span class="test-card_tag test-card_tag--green">Any day</span>
+            <h5 class="test-card_title test-card_title--green">Vitamin D</h5>
+            <p class="test-card_desc">Not covered by <span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) 
+              is Ontario's publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span>.<br>
+              Around $75.</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+
   </div>
 </section>
 
 <style>
-  /* ---- Zigzag container ---- */
-  .zz {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+  /* ---- Group label ---- */
+  .test-grid__group-label {
+    font-size: 1.5rem;
+    color: var(--sage-dark);
+    letter-spacing: 0.05em;
+    margin: 2.5rem 0 1.25rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--terracotta-light);
   }
 
-  .zz-line {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--terracotta-light);
-    transform: translateX(-50%);
+  .test-grid__group-label:first-child {
+    margin-top: 0;
   }
 
-  /* ---- Step row ---- */
-  .zz-step {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    position: relative;
+  /* ---- Grid layout ---- */
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 
-  .zz-step:last-child {
-    margin-bottom: 0;
-  }
+  /* Single card row (for male partner section) */
+.test-grid--two {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .zz-left {
-    flex-direction: row;
-  }
-
-  .zz-right {
-    flex-direction: row-reverse;
-  }
-
-  /* ---- Content card ---- */
-  .zz-content {
-    flex: 1;
-    padding: 1.2rem 1.5rem;
-    border-radius: 12px;
+  /* ---- Card ---- */
+  .test-card {
     background: #fff;
     border: 1px solid var(--terracotta-light);
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    min-height: 280px;
   }
 
-  .zz-left .zz-content {
-    margin-right: 2rem;
-    text-align: right;
-  }
-
-  .zz-right .zz-content {
-    margin-left: 2rem;
-    text-align: left;
-  }
-
-  .zz-spacer {
-    flex: 1;
+  .test-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
   }
 
   /* ---- Circle ---- */
-  .zz-circle {
+  .test-card_circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border: 3px solid;
     background: #fff;
+    border: 3px solid;
+    margin-bottom: 1rem;
+    overflow: hidden;
   }
 
-  .zz-circle img {
+  .test-card_circle img {
     width: 60px;
     height: 60px;
     object-fit: contain;
   }
 
-  .zz-circle--sage   { border-color: var(--sage); }
-  .zz-circle--green  { border-color: var(--green-title); }
-  .zz-circle--orange { border-color: var(--orange-red); }
-  .zz-circle--terra  { border-color: var(--terracotta); }
-  .zz-circle--navy   { border-color: var(--navy-dark); }
+  .test-card_circle--sage   { border-color: var(--sage); }
+  .test-card_circle--green  { border-color: var(--green-title); }
+  .test-card_circle--orange { border-color: var(--orange-red); }
+  .test-card_circle--terra  { border-color: var(--terracotta); }
+  .test-card_circle--navy   { border-color: var(--navy-dark); }
 
-  /* ---- Tag / pill ---- */
-  .zz-tag {
+  /* ---- Content ---- */
+  .test-card__content {
+    width: 100%;
+    flex: 1;               
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---- Tag ---- */
+  .test-card_tag {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 2px 10px;
     border-radius: 10px;
     margin-bottom: 0.4rem;
     font-weight: 600;
   }
 
-  .zz-tag--sage   { background: rgba(139,168,136,0.15); color: var(--sage); }
-  .zz-tag--green  { background: rgba(48,150,38,0.15);   color: var(--green-title); }
-  .zz-tag--orange { background: rgba(223,116,74,0.15);  color: var(--orange-red); }
-  .zz-tag--terra  { background: rgba(196,129,106,0.15); color: var(--terracotta); }
-  .zz-tag--navy   { background: rgba(21,68,122,0.15);   color: var(--navy-dark); }
+  .test-card_tag--sage   { background: rgba(139,168,136,0.15); color: var(--sage); }
+  .test-card_tag--green  { background: rgba(48,150,38,0.15);   color: var(--green-title); }
+  .test-card_tag--orange { background: rgba(223,116,74,0.15);  color: var(--orange-red); }
+  .test-card_tag--terra  { background: rgba(196,129,106,0.15); color: var(--terracotta); }
+  .test-card_tag--navy   { background: rgba(21,68,122,0.15);   color: var(--navy-dark); }
+
+  .test-card_tag--optional {
+    background: rgba(120,120,120,0.12);
+    color: #666;
+    border: 1px dashed #999;
+  }
 
   /* ---- Title ---- */
-  .zz-title {
+  .test-card_title {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
   }
 
-  .zz-title--sage   { color: var(--sage); }
-  .zz-title--green  { color: var(--green-title); }
-  .zz-title--orange { color: var(--orange-red); }
-  .zz-title--terra  { color: var(--terracotta); }
-  .zz-title--navy   { color: var(--navy-dark); }
+  .test-card_title--sage   { color: var(--sage); }
+  .test-card_title--green  { color: var(--green-title); }
+  .test-card_title--orange { color: var(--orange-red); }
+  .test-card_title--terra  { color: var(--terracotta); }
+  .test-card_title--navy   { color: var(--navy-dark); }
 
   /* ---- Description ---- */
-  .zz-desc {
-    font-size: 0.85rem;
-    color: #6c757d;
-    line-height: 1.6;
+  .test-card_desc {
+    font-size: 0.82rem;
+    color: var(--charcoal);
+    line-height: 1.5;
     margin-bottom: 0;
+    margin-top: auto;
   }
 
+  /* ---- For a tag ---- */
+  .test-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.timeline-item {
+    scroll-margin-top: 80px;
+}
+
+.test-card-link:hover {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
   /* ---- Responsive ---- */
-  @media (max-width: 767px) {
-    .zz-line {
-      left: 40px;
+  @media (max-width: 991px) {
+    .test-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    .zz-step,
-    .zz-left,
-    .zz-right {
-      flex-direction: row !important;
-    }
-
-    .zz-spacer {
-      display: none;
-    }
-
-    .zz-circle {
-      width: 60px;
-      height: 60px;
-      flex-shrink: 0;
-      margin-right: 1rem;
-    }
-
-    .zz-circle img {
-      width: 44px;
-      height: 44px;
-    }
-
-    .zz-content {
-      margin: 0 !important;
-      text-align: left !important;
+  @media (max-width: 575px) {
+    .test-grid {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>

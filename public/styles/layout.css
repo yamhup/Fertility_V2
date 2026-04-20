@@ -279,6 +279,27 @@ a.green-text:hover {
 .highlight-box strong { 
   color: var(--orange-red); 
 }
+.highlight-box__title {
+    color: var(--sage-dark);
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.highlight-box__list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.highlight-box__list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.highlight-box__list li:last-child {
+    margin-bottom: 0;
+}
 
 .initial-specialist-box{
   background: var(--white);
@@ -360,9 +381,7 @@ a.green-text:hover {
 
 /* ─── TIMELINE ─── */
 .timeline {
-  position: relative;
   margin: 1.5rem 0;
-  padding-left: 2rem;
 }
 
 .timeline::before {
@@ -376,8 +395,35 @@ a.green-text:hover {
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 1.8rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--terracotta-light);
+
+
+    scroll-margin-top: 80px;
+    transition: background 0.4s ease, border-left 0.4s ease;
+    border-left: 3px solid transparent;
+    padding-left: 1rem;
+}
+
+/* 2. 點擊跳轉的目標段落，強烈視覺強化 */
+.timeline-item:target {
+    background: rgba(139,168,136,0.08);   /* sage 淡背景 */
+    border-left: 3px solid var(--sage);   /* 左側 sage 色帶 */
+    border-radius: 0 8px 8px 0;
+}
+
+/* 3. 標題視覺強化（讓每段標題自帶色塊感） */
+.timeline-item h5 {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--sage-mist);
+    color: var(--sage-dark);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;     
 }
 
 .timeline-item::before {
@@ -396,17 +442,54 @@ a.green-text:hover {
   font-size: 1.05rem;
   color: var(--navy-dark);
   margin-bottom: 0.3rem;
+
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  /* border-bottom: 2px solid var(--sage-light, #D4E4D2); */
+  display: inline-block;
+
 }
 
 .timeline-item strong {
   color: var(--orange-red);
+
+  display: block;
+  /* color: var(--charcoal); */
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
 }
 
 .timeline-item p {
   font-size: 1rem;
-  color: var(--text-light);
-  line-height: 1.65;
+  color: var(--charcoal);
+  line-height: 1.7;
 }
+
+/* ─── Q&A BLOCK ─── */
+.qa-block {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--terracotta-light);
+}
+
+.qa-block:last-child {
+    border-bottom: none;
+}
+
+.qa-block__question {
+    color: var(--sage-dark);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
+.qa-block p {
+    color: var(--charcoal);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
 
 /* ─── ABOUT PHOTO ─── */
 .about-photo {
