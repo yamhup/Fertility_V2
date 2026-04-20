@@ -535,13 +535,11 @@ a.green-text:hover {
   .stage-banner { padding-top: 5rem; }
   .info-block { padding: 1.3rem; }
   .d-flex.justify-content-between { flex-direction: column; gap: 0.8rem; }
+    .desktop-img {
+      display: none;
+  }
+  .mobile-img {
+      display: block;
+  }
 }
 
-@media (max-width: 576px) {
-    .desktop-img {
-        display: none;
-    }
-    .mobile-img {
-        display: block;
-    }
-}
