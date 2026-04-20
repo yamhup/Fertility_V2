@@ -1,69 +1,69 @@
 <!-- Stage 1: 5-Step Infographic -->
 <section class="stage1-steps text-center py-5">
-  <h2 class="stage1-steps__title">Stage 1: From your family doctor to the clinic</h2>
-  <p class="stage1-steps__subtitle">
+  <h2 class="stage1-steps_title">Stage 1: From your family doctor to the clinic</h2>
+  <p class="stage1-steps_subtitle">
     In Ontario, the fertility journey begins with understanding whether you meet the definition of infertility,
     then moves through research, booking, and your GP visit until the clinic reaches out.
   </p>
 
   <!-- Steps grid -->
-  <div class="stage1-steps__grid">
+  <div class="stage1-steps_grid">
 
     <!-- Step 1: Understand -->
-    <div class="stage1-steps__col">
-      <div class="stage1-steps__pill stage1-steps__pill--sage"><span>1</span></div>
-      <div class="stage1-steps__icon">
+    <div class="stage1-steps_col">
+      <div class="stage1-steps_pill stage1-steps_pill--sage"><span>1</span></div>
+      <div class="stage1-steps_icon">
         <img src="<%= basePath %>/static/images/understand.png" alt="Understand Icon" width="36" height="36">
       </div>
-      <div class="stage1-steps__label" style="color: var(--sage);">Understand</div>
-      <div class="stage1-steps__desc">
+      <div class="stage1-steps_label" style="color: var(--sage);">Understand</div>
+      <div class="stage1-steps_desc">
         Learn the medical definition of infertility: 12 months of trying, or 6 months if you're 35+
       </div>
     </div>
 
     <!-- Step 2: Research -->
-    <div class="stage1-steps__col">
-      <div class="stage1-steps__pill stage1-steps__pill--green"><span>2</span></div>
-      <div class="stage1-steps__icon">
+    <div class="stage1-steps_col">
+      <div class="stage1-steps_pill stage1-steps_pill--green"><span>2</span></div>
+      <div class="stage1-steps_icon">
         <img src="<%= basePath %>/static/images/research.png" alt="Research Icon" width="36" height="36">
       </div>
-      <div class="stage1-steps__label" style="color: var(--green-title);">Research</div>
+      <div class="stage1-steps_label" style="color: var(--green-title);">Research</div>
       <div class="stage1-steps__desc">
         Browse the clinic list on this site. Compare location, travel time, reviews, and wait times
       </div>
     </div>
 
     <!-- Step 3: Book your GP -->
-    <div class="stage1-steps__col">
-      <div class="stage1-steps__pill stage1-steps__pill--orange"><span>3</span></div>
-      <div class="stage1-steps__icon">
+    <div class="stage1-steps_col">
+      <div class="stage1-steps_pill stage1-steps_pill--orange"><span>3</span></div>
+      <div class="stage1-steps_icon">
         <img src="<%= basePath %>/static/images/book_gp.png" alt="Book GP Icon" width="36" height="36">
       </div>
-      <div class="stage1-steps__label" style="color: var(--orange-red);">Book your GP</div>
+      <div class="stage1-steps_label" style="color: var(--orange-red);">Book your GP</div>
       <div class="stage1-steps__desc">
         Call your family doctor to book an appointment. Prepare your info and questions ahead of time
       </div>
     </div>
 
     <!-- Step 4: Visit your GP -->
-    <div class="stage1-steps__col">
-      <div class="stage1-steps__pill stage1-steps__pill--terra"><span>4</span></div>
-      <div class="stage1-steps__icon">
+    <div class="stage1-steps_col">
+      <div class="stage1-steps_pill stage1-steps_pill--terra"><span>4</span></div>
+      <div class="stage1-steps_icon">
         <img src="<%= basePath %>/static/images/visit_gp.png" alt="Visit GP Icon" width="36" height="36">
       </div>
-      <div class="stage1-steps__label" style="color: var(--terracotta);">Visit your GP</div>
+      <div class="stage1-steps_label" style="color: var(--terracotta);">Visit your GP</div>
       <div class="stage1-steps__desc">
         Tell your doctor about your situation and which clinic you'd like. Ask for a referral letter
       </div>
     </div>
 
     <!-- Step 5: Wait for the call -->
-    <div class="stage1-steps__col">
-      <div class="stage1-steps__pill stage1-steps__pill--navy"><span>5</span></div>
-      <div class="stage1-steps__icon">
+    <div class="stage1-steps_col">
+      <div class="stage1-steps_pill stage1-steps_pill--navy"><span>5</span></div>
+      <div class="stage1-steps_icon">
         <img src="<%= basePath %>/static/images/wait_for_call.png" alt="Wait For Call Icon" width="36" height="36">
       </div>
-      <div class="stage1-steps__label" style="color: var(--navy-dark);">Wait for the call</div>
+      <div class="stage1-steps_label" style="color: var(--navy-dark);">Wait for the call</div>
       <div class="stage1-steps__desc">
         The clinic contacts you. Choose your doctor, fill out forms, and schedule your first visit
       </div>
@@ -73,14 +73,14 @@
 </section>
 
 <style>
-  .stage1-steps__title {
+  .stage1-steps_title {
     font-size: 2rem;
     font-weight: 600;
     color: var(--navy-dark);
     margin-bottom: 0.4rem;
   }
 
-  .stage1-steps__subtitle {
+  .stage1-steps_subtitle {
     font-size: 1.05rem;
     color: #6c757d;
     max-width: 560px;
@@ -89,7 +89,7 @@
   }
 
   /* ---- Grid layout ---- */
-  .stage1-steps__grid {
+  .stage1-steps_grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
@@ -97,7 +97,7 @@
     margin: 0 auto;
   }
 
-  .stage1-steps__col {
+  .stage1-steps_col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,7 @@
   }
 
   /* ---- Pills ---- */
-  .stage1-steps__pill {
+  .stage1-steps_pill {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,30 +120,30 @@
     transition: transform 0.2s ease;
   }
 
-.stage1-steps__col:hover {
+.stage1-steps_col:hover {
     transform: scale(1.06);
     transition: transform 0.2s ease;
     cursor: pointer;
 }
 
-  .stage1-steps__pill--sage  { background: var(--sage); }
-  .stage1-steps__pill--green { background: var(--green-title); }
-  .stage1-steps__pill--orange{ background: var(--orange-red); }
-  .stage1-steps__pill--terra { background: var(--terracotta); }
-  .stage1-steps__pill--navy  { background: var(--navy-dark); }
+  .stage1-steps_pill--sage  { background: var(--sage); }
+  .stage1-steps_pill--green { background: var(--green-title); }
+  .stage1-steps_pill--orange{ background: var(--orange-red); }
+  .stage1-steps_pill--terra { background: var(--terracotta); }
+  .stage1-steps_pill--navy  { background: var(--navy-dark); }
 
   /* ---- Icon, label, description ---- */
-  .stage1-steps__icon {
+  .stage1-steps_icon {
     margin-bottom: 0.5rem;
   }
 
-  .stage1-steps__icon img {
+  .stage1-steps_icon img {
     width: 36px;
     height: 36px;
     object-fit: contain;
   }
 
-  .stage1-steps__label {
+  .stage1-steps_label {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.35rem;
@@ -157,12 +157,12 @@
 
   /* ---- Responsive ---- */
   @media (max-width: 767px) {
-    .stage1-steps__grid {
+    .stage1-steps_grid {
       grid-template-columns: 1fr;
       max-width: 320px;
     }
 
-    .stage1-steps__col {
+    .stage1-steps_col {
       display: grid;
       grid-template-columns: auto 1fr;
       grid-template-rows: auto auto;
@@ -171,7 +171,7 @@
       align-items: start;
     }
 
-    .stage1-steps__pill {
+    .stage1-steps_pill {
       grid-row: 1 / 3;
       width: 48px;
       height: 48px;
@@ -180,11 +180,11 @@
       margin-bottom: 0;
     }
 
-    .stage1-steps__icon {
+    .stage1-steps_icon {
       display: none;
     }
 
-    .stage1-steps__label {
+    .stage1-steps_label {
       align-self: end;
       margin-bottom: 0.15rem;
     }
