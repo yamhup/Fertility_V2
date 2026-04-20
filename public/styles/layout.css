@@ -5,19 +5,19 @@
   --sage: #8BA888;
   --green-title: #309626;
   --navy-dark: #15447a;
-  --orange-red:#DF744A;
-  --sage-light: #D4E4D2;       
-  --sage-mist: #EDF3EC;                                                                                                                      
-  --sage-dark:#638360;          
-  --terracotta: #C4816A;           
+  --orange-red: #DF744A;
+  --sage-light: #D4E4D2;
+  --sage-mist: #EDF3EC;
+  --sage-dark: #638360;
+  --terracotta: #C4816A;
   --terracotta-light: #F0DDD6;
   --charcoal: #2E3332;
   --text: #3A3F3E;
   --text-light: #6B7270;
   --divider: #E2DDD5;
-}                     
+}
 
- /*  ─── Radley: CSS classes ─── */
+/* ─── Radley font classes ─── */
 .radley-regular {
   font-family: "Radley", serif;
   font-weight: 400;
@@ -38,7 +38,6 @@ html { scroll-behavior: smooth; font-size: 20px; }
 }
 
 body {
-  /* font-family: 'Source Sans 3', Arial, Helvetica, sans-serif; */
   font-family: 'Radley', Arial, Helvetica, serif;
   color: var(--text);
   background: var(--cream);
@@ -70,7 +69,7 @@ main { flex: 1; }
 }
 .site-nav .nav-link:hover { color: var(--navy-dark) !important; }
 
-/* ─── banner ─── */
+/* ─── BANNER ─── */
 .banner {
   min-height: 100vh;
   display: flex;
@@ -93,24 +92,17 @@ main { flex: 1; }
 .banner-sub {
   font-size: 1.3rem;
   color: var(--text-light);
-  color: var(--text-light);
   max-width: 580px;
   margin: 0 auto 2.5rem;
   line-height: 1.8;
 }
+
 /* ─── TEXT COLORS ─── */
-.orange-text{
-  color:var(--orange-red);
-}
-.navy-text {
-  color:var(--navy-dark);
-}
-.green-text {
-  color:var(--green-title);
-} 
+.orange-text { color: var(--orange-red); }
+.navy-text   { color: var(--navy-dark); }
+.green-text  { color: var(--green-title); }
+
 .info-block.clinic-section h5 { color: var(--navy-dark); }
-
-
 
 /* ─── BUTTONS ─── */
 .btn-star {
@@ -122,7 +114,11 @@ main { flex: 1; }
   font-weight: 600;
   transition: background 0.3s, transform 0.2s;
 }
-.btn-star:hover { background: var(--green-title); color: #fff; transform: translateY(-2px); }
+.btn-star:hover {
+  background: var(--green-title);
+  color: #fff;
+  transform: translateY(-2px);
+}
 .btn-outline-sage {
   border: 2px solid var(--navy-dark);
   color: var(--navy-dark);
@@ -135,7 +131,7 @@ main { flex: 1; }
 }
 .btn-outline-sage:active,
 .btn-outline-sage:hover,
-.btn-outline-sage:focus  { 
+.btn-outline-sage:focus {
   background: var(--sage);
   color: #fff;
   border: 2px solid var(--sage);
@@ -143,9 +139,8 @@ main { flex: 1; }
   box-shadow: none;
 }
 
-
 /* ─── SECTIONS ─── */
-.section-overview{
+.section-overview {
   padding: 4rem 0;
   border-top: 1px solid var(--divider);
   scroll-margin-top: 80px;
@@ -158,8 +153,7 @@ main { flex: 1; }
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  /* color: var(--sage); */
-  color:var(--orange-red);
+  color: var(--orange-red);
   font-weight: 600;
   margin-bottom: 0.4rem;
 }
@@ -194,7 +188,6 @@ main { flex: 1; }
 .stage-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 20px rgba(46,51,50,0.08);
-  /* border-color: var(--sage-light); */
   border-color: var(--navy-dark);
   color: inherit;
   text-decoration: none;
@@ -246,15 +239,16 @@ main { flex: 1; }
   padding: 1.8rem;
   margin-bottom: 1.5rem;
 }
-.info-block h4, .info-block h5, .initial-specialist-box h5 {
+.info-block h4,
+.info-block h5,
+.initial-specialist-box h5 {
   font-family: 'DM Serif Display', serif;
   color: var(--charcoal);
   margin-bottom: 0.7rem;
 }
-
 .info-block h4 { font-size: 1.25rem; }
 .info-block h5 { font-size: 1.15rem; }
-.info-block p { font-size: 1rem; line-height: 1.7; }
+.info-block p  { font-size: 1rem; line-height: 1.7; }
 .info-block ul { padding-left: 1.2rem; margin-top: 0.5rem; }
 .info-block ul li {
   margin-bottom: 0.4rem;
@@ -262,12 +256,8 @@ main { flex: 1; }
   list-style-type: disc;
 }
 
-a.green-text {
-  text-decoration: none;
-}
-a.green-text:hover {
-  text-decoration: underline;
-}
+a.green-text { text-decoration: none; }
+a.green-text:hover { text-decoration: underline; }
 
 .highlight-box {
   background: var(--white);
@@ -277,32 +267,25 @@ a.green-text:hover {
   margin: 1.5rem 0;
   font-size: 1rem;
 }
-.highlight-box strong { 
-  color: var(--orange-red); 
-}
+.highlight-box strong { color: var(--orange-red); }
 .highlight-box__title {
-    color: var(--charcoal);
-    margin-bottom: 0.6rem;
-    font-size: 1.3rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+  color: var(--charcoal);
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
-
 .highlight-box__list {
-    margin: 0;
-    padding-left: 1.2rem;
+  margin: 0;
+  padding-left: 1.2rem;
 }
-
 .highlight-box__list li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
+.highlight-box__list li:last-child { margin-bottom: 0; }
 
-.highlight-box__list li:last-child {
-    margin-bottom: 0;
-}
-
-.initial-specialist-box{
+.initial-specialist-box {
   background: var(--white);
   border: 2px solid var(--terracotta-light);
   border-radius: 10px;
@@ -312,7 +295,6 @@ a.green-text:hover {
 }
 
 /* ─── CLINIC TABLE ─── */
-
 .clinic-table thead th {
   background: var(--sage-mist);
   color: var(--navy-dark);
@@ -345,9 +327,7 @@ a.green-text:hover {
   opacity: 0;
   transition: opacity 0.2s;
 }
-.clinic-table a:hover::after {
-  opacity: 0.6;
-}
+.clinic-table a:hover::after { opacity: 0.6; }
 
 /* ─── CLINIC ACCORDION ─── */
 .clinic-section .accordion-item {
@@ -365,59 +345,99 @@ a.green-text:hover {
   background: var(--sage-mist);
   color: var(--navy-dark);
 }
-.clinic-section .accordion-button:focus {
-  box-shadow: none;
-}
+.clinic-section .accordion-button:focus { box-shadow: none; }
 
-/* ─── CLINIC PHONE No.─── */
+/* ─── CLINIC PHONE NUMBER ─── */
 .clinic-phone {
   color: var(--text-light);
   font-size: 0.85em;
 }
 
-/* ─── Initial consultation.─── */
-.initial-specialist-box h5 {
-  color: var(--orange-red);
-}
+/* ─── INITIAL CONSULTATION BOX ─── */
+.initial-specialist-box h5 { color: var(--orange-red); }
 
 /* ─── TIMELINE ─── */
 .timeline {
   margin: 1.5rem 0;
 }
 
-
 .timeline-item {
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   border-bottom: 1px solid var(--terracotta-light);
+  border-radius: 0 8px 8px 0;
   scroll-margin-top: 80px;
-  transition: background 0.4s ease, border-left 0.4s ease, 
-              transform 0.4s ease, box-shadow 0.4s ease;
-  border-left: 3px solid transparent;
-  padding-left: 1rem;
+  transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.timeline-item:last-child { border-bottom: none; }
+
+/* Target state — triggered by anchor links from the test-grid cards */
+.timeline-item:target {
+  background: var(--sage-mist);
+  box-shadow: 0 2px 12px rgba(139,168,136,0.25);
+  transform: scale(1.02);
+  transform-origin: left center;
+}
+
+/* H5 pill-style label */
+.timeline-item h5 {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--sage-light);
+  color: var(--navy-dark);
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-item > p {
+  font-size: 1rem;
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Row: icon + its associated text content, side by side */
+.timeline-item-row {
   display: flex;
-  gap: 1.5rem;
   align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1.25rem;
 }
 
-/* 左邊：icon 容器（可以放多個 icon 垂直疊） */
-.timeline-item-media {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding-top: 0.25rem;
+/* When a row directly follows h5 (no intro p), remove the extra gap */
+.timeline-item h5 + .timeline-item-row {
+  margin-top: 0.25rem;
 }
 
-/* 右邊：文字內容 */
-.timeline-item-body {
+/* Text column inside a row */
+.timeline-item-text {
   flex: 1;
   min-width: 0;
 }
 
-/* 小 icon 圓圈（跟 test-grid 同一套視覺，但尺寸縮小） */
+.timeline-item-text strong {
+  display: block;
+  color: var(--orange-red);
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.timeline-item-text p {
+  font-size: 1rem;
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item-text p:last-child { margin-bottom: 0; }
+
+/* Small icon circle — same visual language as test-grid, scaled down */
 .timeline-icon {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -426,10 +446,9 @@ a.green-text:hover {
   border: 2.5px solid;
   overflow: hidden;
 }
-
 .timeline-icon img {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -440,95 +459,26 @@ a.green-text:hover {
 .timeline-icon--navy     { border-color: var(--navy-dark); }
 .timeline-icon--charcoal { border-color: var(--charcoal); }
 
-/* Optional 加虛線 */
-.timeline-icon--optional {
-  border-style: dashed;
-}
-
-
-
-
-
-
-
-
-/* 2. 點擊跳轉的目標段落，強烈視覺強化 */
-.timeline-item:target {
-    /* background: rgba(139,168,136,0.08);   sage 淡背景 */
-    /* border-left: 3px solid var(--sage);   左側 sage 色帶 */
-    /* border-radius: 0 8px 8px 0; */
-
-    background: var(--sage-mist);                    /* 淡綠底，比原本 rgba 更實 */
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 2px 12px rgba(139,168,136,0.25);   /* 加一點 sage 色光暈 */
-    /* padding-right: 1rem; */
-    transform: scale(1.02);
-    transform-origin: left center;
-}
-
-/* 3. 標題視覺強化（讓每段標題自帶色塊感） */
-.timeline-item h5 {
-  display: inline-block;
-  padding: 4px 12px;
-  background: var(--sage-light);
-  color: var(--navy-dark);
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.timeline-item:last-child {
-    border-bottom: none;     
-}
-
-
-.timeline-item h5 {
-  font-size: 1.05rem;
-  color: var(--navy-dark);
-  margin-bottom: 0.3rem;
-  font-weight: 600;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
-  display: inline-block;
-}
-
-.timeline-item strong {
-  color: var(--orange-red);
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
-}
-
-.timeline-item p {
-  font-size: 1rem;
-  color: var(--charcoal);
-  line-height: 1.7;
-}
+/* Optional variant — dashed border */
+.timeline-icon--optional { border-style: dashed; }
 
 /* ─── Q&A BLOCK ─── */
 .qa-block {
-    padding: 1.25rem 0;
-    border-bottom: 1px solid var(--terracotta-light);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--terracotta-light);
 }
-
-.qa-block:last-child {
-    border-bottom: none;
-}
-
+.qa-block:last-child { border-bottom: none; }
 .qa-block_question {
-    color: var(--sage-dark);
-    font-weight: 600;
-    margin-bottom: 0.6rem;
-    font-size: 1.1rem;
+  color: var(--sage-dark);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
 }
-
 .qa-block p {
-    color: var(--charcoal);
-    line-height: 1.7;
-    margin-bottom: 0;
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: 0;
 }
-
 
 /* ─── PHOTOS ─── */
 .about-photo {
@@ -538,17 +488,11 @@ a.green-text:hover {
   object-fit: cover;
   border: 4px solid var(--sage-light);
 }
-
 .infertility-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
-.mobile-img {
-    display: none;
-}
-
-
+.mobile-img { display: none; }
 
 /* ─── FOOTER ─── */
 .site-footer {
@@ -561,7 +505,7 @@ a.green-text:hover {
 }
 .site-footer strong { color: rgba(255,255,255,0.85); }
 
-/* ─── OHIP CLICKABLE ─── */
+/* ─── OHIP CLICKABLE TOOLTIP ─── */
 .ohip-tip {
   color: var(--navy-dark);
   border-bottom: 1px dashed var(--navy-dark);
@@ -574,30 +518,19 @@ a.green-text:hover {
   .stage-banner { padding-top: 5rem; }
   .info-block { padding: 1.3rem; }
   .d-flex.justify-content-between { flex-direction: column; gap: 0.8rem; }
-    .desktop-img {
-      display: none;
-  }
-  .mobile-img {
-      display: block;
-  }
+  .desktop-img { display: none; }
+  .mobile-img  { display: block; }
 }
 
-/* 手機版：圖在文字上方 */
-@media (max-width: 768px) {
-  .timeline-item {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .timeline-item-media {
-    flex-direction: row;    /* 手機上 icon 橫排，省空間 */
-    padding-top: 0;
-  }
+/* Timeline icons — smaller on mobile */
+@media (max-width: 575px) {
   .timeline-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   .timeline-icon img {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
   }
+  .timeline-item-row { gap: 0.75rem; }
 }
