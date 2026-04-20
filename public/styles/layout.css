@@ -362,9 +362,8 @@ a.green-text:hover { text-decoration: underline; }
 }
 
 .timeline-item {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   border-bottom: 1px solid var(--terracotta-light);
-  border-radius: 0 8px 8px 0;
   scroll-margin-top: 80px;
   transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -374,9 +373,14 @@ a.green-text:hover { text-decoration: underline; }
 /* Target state — triggered by anchor links from the test-grid cards */
 .timeline-item:target {
   background: var(--sage-mist);
-  box-shadow: 0 2px 12px rgba(139,168,136,0.25);
-  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(139,168,136,0.25);
   transform-origin: left center;
+  border-radius: 8px;
+  border-bottom-color: transparent; 
+}
+
+.timeline-item:has(+ .timeline-item:target) {
+  border-bottom-color: transparent;
 }
 
 /* H5 pill-style label */
