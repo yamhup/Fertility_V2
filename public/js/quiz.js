@@ -20,15 +20,15 @@
           options.forEach(function (b) { b.disabled = true; });
 
           if (isCorrect) {
-            btn.classList.add('quiz-option--correct');
-            card.querySelector('.quiz-card_feedback--correct').classList.add('show');
+            btn.classList.add('quiz-option-correct');
+            card.querySelector('.quiz-card_feedback-correct').classList.add('show');
           } else {
-            btn.classList.add('quiz-option--wrong');
-            card.querySelector('.quiz-card_feedback--wrong').classList.add('show');
+            btn.classList.add('quiz-option-wrong');
+            card.querySelector('.quiz-card_feedback-wrong').classList.add('show');
             /* Reveal correct answer */
             options.forEach(function (b) {
               if (b.getAttribute('data-correct') === 'true') {
-                b.classList.add('quiz-option--reveal');
+                b.classList.add('quiz-option-reveal');
               }
             });
           }
@@ -51,7 +51,7 @@
 
     var correct = 0;
     answered.forEach(function (c) {
-      if (c.querySelector('.quiz-option--correct')) correct++;
+      if (c.querySelector('.quiz-option-correct')) correct++;
     });
 
     var scoreEl = carousel.querySelector('.quiz-score');
