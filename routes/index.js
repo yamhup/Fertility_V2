@@ -1,12 +1,19 @@
 var express = require("express");
 var router = express.Router();
+var path = require("path");
+
+// Load clinic data
+var clinics = require('../data/clinics.json');
 
 router.get('/', (req, res) => {
   res.render('index', { title: 'Ontario Fertility Journey' });
 });
 
 router.get('/stage1', (req, res) => {
-  res.render('stage1', { title: 'Stage 1: Before the Family Doctor — Ontario Fertility Journey' });
+  res.render('stage1', { 
+    title: 'Stage 1: Before the Family Doctor — Ontario Fertility Journey',
+    clinics: clinics
+  });
 });
 
 router.get('/stage2', (req, res) => {

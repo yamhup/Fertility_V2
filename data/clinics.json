@@ -1,0 +1,140 @@
+[
+  {
+    "region": "Toronto",
+    "id": "toronto",
+    "clinics": [
+      { "name": "Anova Fertility & Reproductive Health", "url": "https://anovafertility.com", "phone": "416-225-4440", "address": "25 Sheppard Ave. West, Suites 650 & 690", "services": "AI/IUI/IVF/FP" },
+      { "name": "CReATe Fertility Centre", "url": "https://createivf.com", "phone": "416-323-7727", "address": "790 Bay Street, Suite 1100", "services": "AI/IUI/IVF/FP" },
+      { "name": "Dr. Anthony Auyeung", "url": null, "phone": "416-260-2004", "address": "180 Bloor Street West, Suite 201", "services": "AI/IUI" },
+      { "name": "Generation Fertility Toronto West", "url": "https://generationfertility.ca", "phone": "416-233-8111", "address": "56 Aberfoyle Crescent, Suite 300", "services": "AI/IUI/IVF/FP" },
+      { "name": "Hannam Fertility Centre", "url": "https://hannamfertility.com", "phone": "416-595-1521", "address": "160 Bloor Street East, Suite 1500", "services": "AI/IUI/IVF/FP" },
+      { "name": "Mount Sinai Fertility", "url": "https://mountsinaifertility.com", "phone": "416-586-4748", "address": "250 Dundas Street West, 7th Floor", "services": "AI/IUI/IVF/FP" },
+      { "name": "Pollin Fertility Clinic", "url": "https://www.pollinfertility.com", "phone": "416-342-3552", "address": "2360 Yonge Street, 2nd Floor", "services": "IVF/FP" },
+      { "name": "Twig Fertility", "url": "https://www.twigfertility.com", "phone": "416-855-8944", "address": "313 Eglinton Avenue West", "services": "IVF/FP" },
+      { "name": "TRIO Fertility", "url": "https://triofertility.com", "phone": "416-506-0804", "address": "655 Bay Street, 11th and 18th Floor", "services": "AI/IUI/IVF/FP" }
+    ]
+  },
+  {
+    "region": "North York / Scarborough",
+    "id": "northyork",
+    "clinics": [
+      { "name": "MCF Reproductive & Health Services", "url": "https://mcfreproductive.com", "phone": "416-221-4602", "address": "2888 Bathurst Street, Suite 100, North York", "services": "AI/IUI" },
+      { "name": "Create Fertility Centre North York", "url": "https://www.createivf.com", "phone": "416-283-5539", "address": "4025 Yonge Street, Suite 215, North York", "services": "AI/IUI" },
+      { "name": "Tripod Fertility", "url": "https://www.tripodfertility.com", "phone": "905-201-3420", "address": "2225 Sheppard Avenue East, Suite 901, North York", "services": "IVF/FP" },
+      { "name": "Hope Fertility", "url": "https://hopefertility.ca", "phone": "416-609-8868", "address": "2330 Kennedy Road, Suite 317, Scarborough", "services": "AI/IUI" },
+      { "name": "IVF Canada & The Life Program", "url": "https://ivfcanada.com", "phone": "416-754-1010", "address": "2347 Kennedy Road, Suite 304, Scarborough", "services": "AI/IUI/IVF/FP" }
+    ]
+  },
+  {
+    "region": "Etobicoke",
+    "id": "etobicoke",
+    "clinics": [
+      { "name": "Etobicoke Fertility Centre", "url": null, "phone": "416-741-9900", "address": "110 Queen's Plate Drive", "services": "AI/IUI" },
+      { "name": "CHARM Fertility", "url": "https://charmfertility.com", "phone": "416-748-2800", "address": "101 Westmore Drive, Suite 201", "services": "AI/IUI" },
+      { "name": "Create West Fertility Inc.", "url": null, "phone": "416-231-4100", "address": "56 Aberfoyle Crescent, Suite 100", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "York Region (Markham / Richmond Hill / Vaughan / Concord / Newmarket)",
+    "id": "yorkregion",
+    "clinics": [
+      { "name": "IVF Canada Markham", "url": "https://www.ivfcanada.com", "phone": "905-597-7661", "address": "7191 Yonge Street, Suite 111, Markham", "services": "IVF/FP" },
+      { "name": "Markham Fertility Centre", "url": "https://markhamfertility.com", "phone": "905-472-7128", "address": "379 Church Street, 5th Floor, Markham", "services": "AI/IUI/IVF/FP" },
+      { "name": "Nahal Fertility Program", "url": "https://nahalfertility.com", "phone": "905-482-3389", "address": "30 Wertheim Court, Suite 22, Richmond Hill", "services": "AI/IUI/IVF/FP" },
+      { "name": "NewLife Fertility Centre", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "670 Highway 7 East, Suite 8, Richmond Hill", "services": "AI/IUI" },
+      { "name": "Generation Fertility Vaughan", "url": "https://generationfertility.ca", "phone": "289-357-0100", "address": "955 Major Mackenzie Drive West, Suite 400, Vaughan", "services": "AI/IUI/IVF/FP" },
+      { "name": "Harmony Fertility", "url": "https://harmonywomensclinic.com", "phone": "905-884-6119", "address": "1600 Steeles Avenue West, Suite 25, Concord", "services": "AI/IUI/IVF/FP" },
+      { "name": "NewLife Fertility Centre Concord", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "8760 Jane Street, Unit 101, Concord", "services": "AI/IUI" },
+      { "name": "Generation Fertility Newmarket", "url": "https://generationfertility.ca", "phone": "905-967-0852", "address": "1111 Davis Drive East, Unit 39, Newmarket", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Peel Region (Mississauga / Brampton)",
+    "id": "peelregion",
+    "clinics": [
+      { "name": "ASTRA Fertility", "url": "https://astrafertility.com", "phone": "905-949-6999", "address": "4303 Village Centre Court, Mississauga", "services": "AI/IUI/IVF/FP" },
+      { "name": "Mount Sinai Fertility (Mississauga-Oakville)", "url": "https://mountsinaifertility.com", "phone": "905-901-5123", "address": "800 Southdown Road, Suite A4, Mississauga", "services": "AI/IUI" },
+      { "name": "NewLife Fertility Centre", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "4250 Sherwoodtowne Boulevard, Mississauga", "services": "AI/IUI/IVF/FP" },
+      { "name": "The Reproductive Care Centre (RCC)", "url": "https://rccfertility.com", "phone": "905-816-9822", "address": "2180 Meadowvale Boulevard, Mississauga", "services": "AI/IUI/IVF/FP" },
+      { "name": "CHARM Fertility Brampton", "url": "https://charmfertility.com", "phone": "905-457-8558", "address": "244 Queen Street East, Brampton", "services": "AI/IUI" },
+      { "name": "NewLife Fertility Centre Brampton", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "Unit 210, 2 Dewside Drive, Brampton", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Halton Region (Burlington / Oakville / Milton)",
+    "id": "haltonregion",
+    "clinics": [
+      { "name": "ONE Fertility Burlington", "url": "https://onefertility.com", "phone": "905-634-4440", "address": "3210 Harvester Road, Burlington", "services": "AI/IUI/IVF/FP" },
+      { "name": "NewLife Fertility Centre Burlington", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "418 Plains Road East, Burlington", "services": "AI/IUI" },
+      { "name": "TRIO Fertility Burlington", "url": "https://triofertility.com", "phone": "905-731-3860", "address": "3115 Harvester Road, Suite 301, Burlington", "services": "IVF/FP" },
+      { "name": "CHARM Fertility Oakville", "url": "https://charmfertility.com", "phone": "905-844-7238", "address": "627 Lyons Lane, Level B, Oakville", "services": "AI/IUI" },
+      { "name": "NewLife Fertility Centre Milton", "url": "https://newlifefertility.com", "phone": "905-896-7100", "address": "470 Bronte Street South, Suite 201, Milton", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Durham Region (Oshawa / Whitby)",
+    "id": "durhamregion",
+    "clinics": [
+      { "name": "Create Durham Fertility Centre", "url": "https://www.createivf.com", "phone": "905-721-3582", "address": "117 King Street East, Oshawa", "services": "AI/IUI" },
+      { "name": "DREAM Fertility", "url": "https://dreamfertility.ca", "phone": "905-721-2161", "address": "198 Des Newman Boulevard, Whitby", "services": "AI/IUI" },
+      { "name": "Lakeridge Fertility", "url": "https://lakeridgefertility.com", "phone": null, "address": "220 Dundas Street West, Suite 404, Whitby", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Hamilton / Niagara",
+    "id": "hamilton",
+    "clinics": [
+      { "name": "NewLife Fertility Centre Hamilton", "url": "https://newlifefertility.com", "phone": "905-972-8382", "address": "1057 Main Street West, Suite 102, Hamilton", "services": "AI/IUI" },
+      { "name": "Niagara Fertility at Stoney Creek", "url": "https://ontariofertilitynetwork.com", "phone": "905-662-3139", "address": "821 North Service Road, Unit 103, Stoney Creek", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Kitchener-Waterloo",
+    "id": "kitchener",
+    "clinics": [
+      { "name": "ONE Fertility Kitchener-Waterloo", "url": "https://onefertilitykitchenerwaterloo.com", "phone": "519-650-0011", "address": "4271 King Street East, Suite 200, Kitchener", "services": "AI/IUI/IVF/FP" },
+      { "name": "Generation Fertility Waterloo", "url": "https://generationfertility.ca/waterloo", "phone": "519-570-0090", "address": "435 The Boardwalk, Suite 508, Waterloo", "services": "AI/IUI/IVF/FP" },
+      { "name": "TRIO Fertility Waterloo", "url": "https://triofertility.com", "phone": "519-585-1796", "address": "430 The Boardwalk, Waterloo", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Barrie / Orillia",
+    "id": "barrie",
+    "clinics": [
+      { "name": "Barrie Fertility Centre", "url": "https://barriefertilitycentre.com", "phone": "705-728-7784", "address": "1 Quarry Ridge Road, Suite 201, Barrie", "services": "AI/IUI" },
+      { "name": "Horizon Fertility", "url": null, "phone": "705-558-2331", "address": "16 O'Brien Street, Suite 103, Orillia", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "London",
+    "id": "london",
+    "clinics": [
+      { "name": "OMEGA Fertility Center", "url": "https://omegafertility.ca", "phone": "519-685-5559", "address": "373 Commissioners Road West", "services": "AI/IUI/IVF/FP" },
+      { "name": "OMEGA Fertility Center (East)", "url": "https://omegafertility.ca", "phone": "519-685-5559", "address": "555 Southdale Road East, Suite 107", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Ottawa",
+    "id": "ottawa",
+    "clinics": [
+      { "name": "Ottawa Fertility Centre", "url": "https://conceive.ca", "phone": "613-686-3378", "address": "955 Green Valley Crescent, Suite 200", "services": "AI/IUI/IVF/FP" }
+    ]
+  },
+  {
+    "region": "Windsor / Sarnia",
+    "id": "windsor",
+    "clinics": [
+      { "name": "Dr. Rahal Fertility Clinic", "url": null, "phone": "519-944-6400", "address": "8100 Twin Oaks Drive, Windsor", "services": "AI/IUI" },
+      { "name": "Victory Reproductive Care", "url": "https://drvictory.com", "phone": "519-944-6400", "address": "8100 Twin Oaks Drive, Windsor", "services": "AI/IUI/IVF/FP" },
+      { "name": "Victory Reproductive Care (Sarnia)", "url": null, "phone": "519-491-6080", "address": "105-704 Mara Street, Point Edward", "services": "AI/IUI" }
+    ]
+  },
+  {
+    "region": "Northern Ontario",
+    "id": "northern",
+    "clinics": [
+      { "name": "NEO Fertility Services", "url": null, "phone": "705-222-0492", "address": "1596 Regent Street, Sudbury", "services": "IUI" },
+      { "name": "North Shore Fertility Centre", "url": null, "phone": "807-346-1000", "address": "194 Court Street North, Thunder Bay", "services": "AI/IUI" }
+    ]
+  }
+]

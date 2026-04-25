@@ -317,10 +317,12 @@ a.green-text:hover { text-decoration: underline; }
   border-radius: 2px;
 }
 .clinic-table a::after {
-  content: ' ↗';
+  font-family: 'bootstrap-icons';
+  content: '\F1C5';
   font-size: 0.75em;
   opacity: 0;
   transition: opacity 0.2s;
+  
 }
 .clinic-table a:hover::after { opacity: 0.6; }
 
