@@ -28,7 +28,8 @@
 			</p>
 			<p>
 				Approximately <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7008682/" target="_blank" 
-				class="green-text">one in six couples</a> in Ontario will experience infertility and require assisted reproductive 
+				title="Source: PubMed Central (PMC)" data-bs-toggle="tooltip"class="green-text">
+				one in six couples</a> in Ontario will experience infertility and require assisted reproductive 
 				technology (ART) to achieve pregnancy.
 			</p>
 			<div class="text-center my-3">
@@ -42,6 +43,32 @@
 				residents at no cost.">OHIP</span> card, you can still access fertility clinics. Some clinics accept self-referrals, 
 				but all costs would be out of pocket.
 			</p>
+
+			<div class="row align-items-center mt-4">
+				<div class="col-md-8">
+					<h5 style="color: var(--navy-dark)">What is an OHIP Card?</h5>
+					<p>
+						OHIP stands for the Ontario Health Insurance Plan. It is Ontario's publicly funded health 
+						insurance program, available to eligible residents at no cost. Your OHIP card is what you 
+						present at medical appointments to access covered services, including family doctor visits, 
+						specialist consultations, and most diagnostic tests during the fertility process.
+					</p>
+					<p class="text-muted small">
+						<a href="https://www.ontario.ca/page/apply-ohip-and-get-health-card" target="_blank" class="green-text">
+							OHIP eligibility and how to apply 
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+							</svg>
+						</a>
+					</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="<%= basePath %>/static/images/healthcard-illustrated.jpg" 
+						alt="Sample Ontario health card (OHIP card) showing a cartoon illustration with a sample name and number" 
+						style="max-width: 260px; width: 100%; border-radius: 8px;">
+				</div>
+			</div>
+
 		</div>
 
 		<div class="highlight-box">
@@ -49,8 +76,7 @@
 				<div class="col-md-8">
 					<strong>Fertility services are open to all eligible Ontarians.</strong>
 					<br>To access government-funded fertility treatments, you must be an Ontario resident with a valid 
-					<span class="ohip-tip" data-bs-toggle="tooltip" title="OHIP (Ontario Health Insurance Plan) is Ontario's 
-					publicly funded health insurance, available to eligible Ontario residents at no cost.">OHIP</span> card. 
+					OHIP card. 
 					<strong style="color: var(--navy-dark);">Whether you are pursuing parenthood on your own or with a partner, sex, gender, sexual orientation, 
 					and family status are not considerations in determining eligibility.</strong>
 				</div>
@@ -66,9 +92,7 @@
 				<div class="highlight-box">
 					<strong>Getting started doesn't cost you anything.</strong> 
 					<br>Your family doctor visit, the referral, your first consultation with the fertility specialist, 
-					and most diagnostic tests (blood work, ultrasound, etc.) are all covered by <span class="ohip-tip" data-bs-toggle="tooltip" 
-					title="OHIP (Ontario Health Insurance Plan) is Ontario's publicly funded health insurance, available to eligible Ontario 
-					residents at no cost.">OHIP</span>. Out-of-pocket costs 
+					and most diagnostic tests (blood work, ultrasound, etc.) are all covered by OHIP. Out-of-pocket costs 
 					only begin later if you move into treatments like IUI or IVF.
 				</div>
 			</div>
@@ -344,7 +368,17 @@
 			<ul>
 				<li><strong>Your timeline</strong> — How long have you been trying? Note the date you started.</li>
 				<li><strong>Menstrual cycle info</strong> — Average cycle length, regularity, any changes.</li>
-				<li><strong>Any relevant medical history</strong> — Previous surgeries, conditions (PCOS, endometriosis, thyroid), medications.</li>
+				<li><strong>Any relevant medical history</strong> — Previous surgeries, conditions (
+					<span data-bs-toggle="tooltip" title="Polycystic Ovary Syndrome: a hormonal condition that can affect ovulation" class="ohip-tip">
+						PCOS
+					</span>, 
+					<span data-bs-toggle="tooltip" title="A condition where tissue similar to the uterine lining grows outside the uterus" class="ohip-tip">
+						endometriosis
+					</span>, 
+					<span data-bs-toggle="tooltip" title="Thyroid disorders can affect hormone levels and interfere with ovulation" class="ohip-tip">
+						thyroid
+					</span>
+				), medications.</li>
 				<li><strong>Your clinic preference</strong> — You can ask your family doctor if they recommend a specific fertility clinic, or research on your own using the clinic list above. Consider which clinics are closest to your home or workplace, since you'll need frequent visits. You can also check Google Maps reviews from other patients. For government-funded treatment waitlist times, you'll need to call each clinic directly — most clinics don't publish this information online.</li>
 			</ul>
 		</div>
