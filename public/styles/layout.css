@@ -594,8 +594,6 @@ a.green-text:hover { text-decoration: underline; }
 
 
 
-
-
 /* ─── QUIZ SECTION ─── */
 .quiz-section {
   background: var(--white);
@@ -701,7 +699,7 @@ a.green-text:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0.5rem;
 }
 
 .quiz-option {
@@ -721,7 +719,8 @@ a.green-text:hover { text-decoration: underline; }
 }
 
 .quiz-option:hover:not(:disabled) {
-  border: 1.5px solid var(--divider);
+  /* border: 1.5px solid var(--divider); */
+  border: 1.5px solid var(--orange-red);
   transform: scale(1.02);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-size: 1.02rem;
