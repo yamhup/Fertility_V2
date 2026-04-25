@@ -28,7 +28,7 @@
         <img src="<%= basePath %>/static/images/research.png" alt="Research Icon" width="36" height="36">
       </div>
       <div class="stage1-steps_label" style="color: var(--green-title);">Research</div>
-      <div class="stage1-steps__desc">
+      <div class="stage1-steps_desc">
         Browse the clinic list on this site. Compare location, travel time, reviews, and wait times
       </div>
     </div>
@@ -40,7 +40,7 @@
         <img src="<%= basePath %>/static/images/book_gp.png" alt="Book GP Icon" width="36" height="36">
       </div>
       <div class="stage1-steps_label" style="color: var(--orange-red);">Book your GP</div>
-      <div class="stage1-steps__desc">
+      <div class="stage1-steps_desc">
         Call your family doctor to book an appointment. Prepare your info and questions ahead of time
       </div>
     </div>
@@ -52,7 +52,7 @@
         <img src="<%= basePath %>/static/images/visit_gp.png" alt="Visit GP Icon" width="36" height="36">
       </div>
       <div class="stage1-steps_label" style="color: var(--terracotta);">Visit your GP</div>
-      <div class="stage1-steps__desc">
+      <div class="stage1-steps_desc">
         Tell your doctor about your situation and which clinic you'd like. Ask for a referral letter
       </div>
     </div>
@@ -64,7 +64,7 @@
         <img src="<%= basePath %>/static/images/wait_for_call.png" alt="Wait For Call Icon" width="36" height="36">
       </div>
       <div class="stage1-steps_label" style="color: var(--navy-dark);">Wait for the call</div>
-      <div class="stage1-steps__desc">
+      <div class="stage1-steps_desc">
         The clinic contacts you. Choose your doctor, fill out forms, and schedule your first visit
       </div>
     </div>
@@ -151,9 +151,16 @@
 
   .stage1-steps__desc {
     font-size: 0.9rem;
-    color: #6c757d;
+    /* color: #6c757d; */
     line-height: 1.6;
   }
+
+  .stage1-steps {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--divider);
+}
 
   /* ---- Responsive ---- */
   @media (max-width: 767px) {

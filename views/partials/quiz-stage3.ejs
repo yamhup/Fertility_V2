@@ -1,0 +1,68 @@
+<!-- Stage 3 Quiz — Bootstrap Carousel -->
+<div class="quiz-section">
+  <h4 class="quiz-section_title">Check Your Understanding</h4>
+  <p class="quiz-section_intro">See if you caught the key points from this stage.</p>
+
+  <div id="quizCarouselS3" class="carousel slide quiz-carousel" data-bs-interval="false" data-bs-wrap="false" data-bs-touch="true" data-total="2">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators quiz-dots">
+      <button type="button" data-bs-target="#quizCarouselS3" data-bs-slide-to="0" class="quiz-dot active" aria-current="true"></button>
+      <button type="button" data-bs-target="#quizCarouselS3" data-bs-slide-to="1" class="quiz-dot"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Q1 -->
+      <div class="carousel-item active">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 1 of 2</p>
+          <p class="quiz-card_question">How many IVF cycles does the Ontario Fertility Program (OFP) fund per eligible patient?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Unlimited</button>
+            <button class="quiz-option" data-correct="false">Three</button>
+            <button class="quiz-option" data-correct="false">Two</button>
+            <button class="quiz-option" data-correct="true">One</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> The Ontario government funds one IVF cycle per eligible patient per lifetime through the OFP. Medications and additional services like genetic testing are typically not covered.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> The OFP covers one IVF cycle per eligible patient per lifetime. This is something many people are surprised to learn exists at all.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 2 of 2</p>
+          <p class="quiz-card_question">Which statement about fertility treatment in Ontario is correct?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">IVF is the only fertility treatment available</button>
+            <button class="quiz-option" data-correct="true">Your doctor may recommend IUI, medication-only cycles, or lifestyle changes depending on your diagnosis</button>
+            <button class="quiz-option" data-correct="false">All fertility treatments are fully covered by OHIP</button>
+            <button class="quiz-option" data-correct="false">You must complete 6 IUI cycles before being eligible for IVF</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> Treatment is not one-size-fits-all. Depending on your diagnosis, your doctor may recommend options other than IVF, including IUI, medication-only cycles, or lifestyle changes.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> IVF is not the only option. Depending on your diagnosis, your doctor may recommend IUI, medication-only cycles, or even lifestyle changes first. Treatment plans are personalized.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="quiz-nav">
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS3" data-bs-slide="prev">&#8592; Previous</button>
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS3" data-bs-slide="next">Next &#8594;</button>
+    </div>
+
+    <div class="quiz-score">
+      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 2.</p>
+    </div>
+
+  </div>
+</div>

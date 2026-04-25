@@ -1,0 +1,141 @@
+<!-- Stage 1 Quiz — Bootstrap Carousel -->
+<div class="quiz-section">
+  <h4 class="quiz-section_title">Check Your Understanding</h4>
+  <p class="quiz-section_intro">Before moving on, see if you caught the key points from this stage.</p>
+  
+  <!-- Bootstrap Carousel wrapper -->
+  <div id="quizCarouselS1" class="carousel slide quiz-carousel" data-bs-interval="false" data-bs-wrap="false" data-bs-touch="true" data-total="5">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators quiz-dots">
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="0" class="quiz-dot active" aria-current="true"></button>
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="1" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="2" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="3" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="4" class="quiz-dot"></button>
+    </div>
+
+    <!-- All quiz slides live inside carousel-inner -->
+    <div class="carousel-inner">
+
+      <!-- Q1  "active" makes this the first visible slide -->
+      <div class="carousel-item active">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 1 of 5</p>
+          <p class="quiz-card_question">How long should someone <strong>under 35</strong> try to conceive before it is considered infertility in Ontario?</p>
+          
+          <!-- Answer buttons — data-correct marks the right answer
+              quiz.js reads this attribute to determine correct/wrong -->
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">3 months</button>
+            <button class="quiz-option" data-correct="false">6 months</button>
+            <button class="quiz-option" data-correct="true">12 months</button>
+            <button class="quiz-option" data-correct="false">24 months</button>
+          </div>
+          
+          <!-- Feedback — hidden by default, quiz.js adds "show" class
+              to reveal the correct or wrong message after answering -->
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> For individuals under 35, infertility is defined as the inability to conceive after 12 months of regular, unprotected intercourse. For those 35 and older, the threshold is 6 months.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> For individuals under 35, the definition is 12 months of trying. The shorter 6-month timeline applies to those 35 and older.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 2 of 5</p>
+          <p class="quiz-card_question">Why is it recommended to research fertility clinics <strong>before</strong> seeing your family doctor?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Because GPs cannot make referrals without a clinic name</button>
+            <button class="quiz-option" data-correct="true">Because your GP may ask which clinic you prefer, and not having an answer delays the referral</button>
+            <button class="quiz-option" data-correct="false">Because clinics only accept patients who self-refer</button>
+            <button class="quiz-option" data-correct="false">Because OHIP requires you to choose a clinic in advance</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> Your family doctor may simply ask which clinic you'd like to be referred to. If you don't have an answer ready, you'll need to go home, research, and come back, which costs valuable time.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> GPs can still make referrals, but they may ask which clinic you prefer. If you already know, the referral can go out the same day instead of requiring a second visit.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 3 of 5</p>
+          <p class="quiz-card_question">In Ontario, approximately how many couples will experience infertility?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">1 in 10</button>
+            <button class="quiz-option" data-correct="true">1 in 6</button>
+            <button class="quiz-option" data-correct="false">1 in 4</button>
+            <button class="quiz-option" data-correct="false">1 in 2</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> About 1 in 6 couples in Ontario experience infertility. It is more common than most people realize, and seeking help is a completely normal step. You are not alone in this.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> The answer is 1 in 6. That is a significant number, and it means many couples go through this same process. Seeking professional support is a common and healthy decision.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 4 of 5</p>
+          <p class="quiz-card_question">If you do not have an OHIP card, can you still access a fertility clinic in Ontario?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">No, OHIP is required to access any fertility clinic</button>
+            <button class="quiz-option" data-correct="true">Yes, but all costs would be out of pocket</button>
+            <button class="quiz-option" data-correct="false">Only public hospitals can see you without OHIP</button>
+            <button class="quiz-option" data-correct="false">You need to apply for special permission first</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> You can still access fertility clinics without OHIP. Some clinics accept self-referrals, but all services and tests would need to be paid out of pocket.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> You do not need OHIP to visit a fertility clinic. Some clinics accept self-referrals, though all costs would be out of pocket without provincial health coverage.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 5 of 5</p>
+          <p class="quiz-card_question">Which of the following is <strong>not</strong> a topic your family doctor would typically discuss during a fertility consultation?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">How long you have been trying to conceive</button>
+            <button class="quiz-option" data-correct="false">Your menstrual cycle pattern and regularity</button>
+            <button class="quiz-option" data-correct="true">Whether you prefer IVF or IUI as your treatment</button>
+            <button class="quiz-option" data-correct="false">Which fertility clinic you would like to be referred to</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> Choosing between IVF and IUI is a treatment decision made later with your fertility specialist, not your family doctor. Your GP visit focuses on your history, your cycle, and sending the referral to the clinic you prefer.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> Your family doctor will ask about your timeline, cycle, and clinic preference. Treatment options like IVF or IUI come later, once you are working with a fertility specialist.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="quiz-nav">
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS1" data-bs-slide="prev">&#8592; Previous</button>
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS1" data-bs-slide="next">Next &#8594;</button>
+    </div>
+
+    <!-- Score -->
+    <div class="quiz-score">
+      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 5.</p>
+    </div>
+
+  </div>
+</div>

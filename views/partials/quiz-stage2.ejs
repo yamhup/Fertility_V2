@@ -1,0 +1,89 @@
+<!-- Stage 2 Quiz — Bootstrap Carousel -->
+<div class="quiz-section">
+  <h4 class="quiz-section_title">Check Your Understanding</h4>
+  <p class="quiz-section_intro">Before moving on, see if you caught the key points from this stage.</p>
+
+  <div id="quizCarouselS2" class="carousel slide quiz-carousel" data-bs-interval="false" data-bs-wrap="false" data-bs-touch="true" data-total="3">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators quiz-dots">
+      <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="0" class="quiz-dot active" aria-current="true"></button>
+      <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="1" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="2" class="quiz-dot"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Q1 -->
+      <div class="carousel-item active">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 1 of 3</p>
+          <p class="quiz-card_question">On which cycle day do most investigative tests begin at the fertility clinic?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Day 1</button>
+            <button class="quiz-option" data-correct="true">Day 3</button>
+            <button class="quiz-option" data-correct="false">Day 7</button>
+            <button class="quiz-option" data-correct="false">Day 14</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> Cycle Day 3 is your first and busiest clinic visit. Both the screening blood work with hormone panel and the baseline ultrasound are done on this day.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> Most investigative tests start on Cycle Day 3. That is when your baseline blood work, hormone panel, and first ultrasound are scheduled.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 2 of 3</p>
+          <p class="quiz-card_question">Which of the following tests is <strong>not</strong> covered by OHIP?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Baseline ultrasound</button>
+            <button class="quiz-option" data-correct="false">Hormone panel</button>
+            <button class="quiz-option" data-correct="true">AMH (Anti-Mullerian Hormone)</button>
+            <button class="quiz-option" data-correct="false">Sonohysterogram</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> AMH costs around $105 out of pocket. Other non-covered tests include Vitamin D ($75) and comprehensive semen analysis ($160).
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> The baseline ultrasound, hormone panel, and sonohysterogram are all covered by OHIP. AMH is one of the few tests you pay for out of pocket (around $105).
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 3 of 3</p>
+          <p class="quiz-card_question">What should you do if you need to switch fertility clinics partway through the investigative cycle?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Start all tests over from scratch at the new clinic</button>
+            <button class="quiz-option" data-correct="true">Ask your family doctor for a new referral; the new clinic will request your records</button>
+            <button class="quiz-option" data-correct="false">Wait until all treatments are complete before switching</button>
+            <button class="quiz-option" data-correct="false">Contact OHIP directly to transfer your file</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> You ask your GP for a new referral, and the new clinic requests your records. Most previous test results will be accepted. A practical tip: request a copy be sent to you as well, in case records transfer incompletely.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> You do not need to start from scratch. Ask your family doctor for a new referral, and the new clinic will request your records from the previous one. Most test results carry over.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="quiz-nav">
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS2" data-bs-slide="prev">&#8592; Previous</button>
+      <button class="quiz-nav_btn" type="button" data-bs-target="#quizCarouselS2" data-bs-slide="next">Next &#8594;</button>
+    </div>
+
+    <div class="quiz-score">
+      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 3.</p>
+    </div>
+
+  </div>
+</div>
