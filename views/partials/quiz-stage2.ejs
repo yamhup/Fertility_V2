@@ -10,6 +10,8 @@
       <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="0" class="quiz-dot active" aria-current="true"></button>
       <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="1" class="quiz-dot"></button>
       <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="2" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="3" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS2" data-bs-slide-to="4" class="quiz-dot"></button>
     </div>
 
     <div class="carousel-inner">
@@ -17,19 +19,19 @@
       <!-- Q1 -->
       <div class="carousel-item active">
         <div class="quiz-card">
-          <p class="quiz-card_count">Question 1 of 3</p>
-          <p class="quiz-card_question">On which cycle day do most investigative tests begin at the fertility clinic?</p>
+          <p class="quiz-card_count">Question 1 of 5</p>
+          <p class="quiz-card_question">Why does the investigative cycle often take more than one menstrual cycle to complete?</p>
           <div class="quiz-card_options">
-            <button class="quiz-option" data-correct="false">Day 1</button>
-            <button class="quiz-option" data-correct="true">Day 3</button>
-            <button class="quiz-option" data-correct="false">Day 7</button>
-            <button class="quiz-option" data-correct="false">Day 14</button>
+            <button class="quiz-option" data-correct="false">Because the clinic is too busy to see you every week</button>
+            <button class="quiz-option" data-correct="true">Because some tests must be timed to specific days of your cycle, and scheduling does not always line up</button>
+            <button class="quiz-option" data-correct="false">Because OHIP only covers one test per cycle</button>
+            <button class="quiz-option" data-correct="false">Because your doctor needs to wait for all results before ordering the next test</button>
           </div>
           <div class="quiz-card_feedback quiz-card_feedback--correct">
-            ✓ <strong>Correct.</strong> Cycle Day 3 is your first and busiest clinic visit. Both the screening blood work with hormone panel and the baseline ultrasound are done on this day.
+            ✓ <strong>Correct.</strong> Tests like the sonohysterogram require a doctor's availability during a specific cycle window. If that window is missed, the test gets pushed to the next cycle. This is normal and does not mean anything is wrong.
           </div>
           <div class="quiz-card_feedback quiz-card_feedback--wrong">
-            ✗ <strong>Not quite.</strong> Most investigative tests start on Cycle Day 3. That is when your baseline blood work, hormone panel, and first ultrasound are scheduled.
+            ✗ <strong>Not quite.</strong> The delay is usually because certain tests can only be done on specific cycle days. If the timing or the doctor's schedule does not line up, you wait until the next cycle.
           </div>
         </div>
       </div>
@@ -37,19 +39,19 @@
       <!-- Q2 -->
       <div class="carousel-item">
         <div class="quiz-card">
-          <p class="quiz-card_count">Question 2 of 3</p>
-          <p class="quiz-card_question">Which of the following tests is <strong>not</strong> covered by OHIP?</p>
+          <p class="quiz-card_count">Question 2 of 5</p>
+          <p class="quiz-card_question">If both you and your male partner complete all non-OHIP-covered tests (including Vitamin D for both), approximately how much should you expect to pay out of pocket in total?</p>
           <div class="quiz-card_options">
-            <button class="quiz-option" data-correct="false">Baseline ultrasound</button>
-            <button class="quiz-option" data-correct="false">Hormone panel</button>
-            <button class="quiz-option" data-correct="true">AMH (Anti-Mullerian Hormone)</button>
-            <button class="quiz-option" data-correct="false">Sonohysterogram</button>
+            <button class="quiz-option" data-correct="false">Around $180</button>
+            <button class="quiz-option" data-correct="false">Around $265</button>
+            <button class="quiz-option" data-correct="true">Around $415</button>
+            <button class="quiz-option" data-correct="false">Around $600</button>
           </div>
           <div class="quiz-card_feedback quiz-card_feedback--correct">
-            ✓ <strong>Correct.</strong> AMH costs around $105 out of pocket. Other non-covered tests include Vitamin D ($75) and comprehensive semen analysis ($160).
+            ✓ <strong>Correct.</strong> The breakdown: AMH ($105) + Vitamin D ($75) for the person with ovaries, plus semen analysis ($160) + Vitamin D ($75) for the male partner. If only one person is being tested, costs would be around $180 for the person with ovaries alone, or $235 for the male partner alone.
           </div>
           <div class="quiz-card_feedback quiz-card_feedback--wrong">
-            ✗ <strong>Not quite.</strong> The baseline ultrasound, hormone panel, and sonohysterogram are all covered by OHIP. AMH is one of the few tests you pay for out of pocket (around $105).
+            ✗ <strong>Not quite.</strong> The total is around $415: AMH ($105) + Vitamin D ($75) for the person with ovaries, and semen analysis ($160) + Vitamin D ($75) for the male partner. Testing for one person alone would be lower.
           </div>
         </div>
       </div>
@@ -57,7 +59,7 @@
       <!-- Q3 -->
       <div class="carousel-item">
         <div class="quiz-card">
-          <p class="quiz-card_count">Question 3 of 3</p>
+          <p class="quiz-card_count">Question 3 of 5</p>
           <p class="quiz-card_question">What should you do if you need to switch fertility clinics partway through the investigative cycle?</p>
           <div class="quiz-card_options">
             <button class="quiz-option" data-correct="false">Start all tests over from scratch at the new clinic</button>
@@ -74,6 +76,46 @@
         </div>
       </div>
 
+      <!-- Q4 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 4 of 5</p>
+          <p class="quiz-card_question">What happens if you miss the cycle window for the sonohysterogram (Sono)?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">You will need to restart all your other tests from scratch</button>
+            <button class="quiz-option" data-correct="false">Your doctor will perform it on a different cycle day instead</button>
+            <button class="quiz-option" data-correct="true">It gets rescheduled to the next cycle, since it is a structural exam that does not change from cycle to cycle</button>
+            <button class="quiz-option" data-correct="false">You will be referred to a hospital for the test instead</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> The sonohysterogram checks for structural issues like polyps or fibroids, which do not change between cycles. Missing the window simply means doing it next month. Your other tests and progress are not affected.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> The Sono is a one-time structural check. Missing the window does not affect your other results. It simply gets rescheduled to the next cycle when the timing works.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 5 of 5</p>
+          <p class="quiz-card_question">During cycle monitoring, how does your clinic decide when you need to come back for your next visit?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">They book all visits in advance at the start of your cycle</button>
+            <button class="quiz-option" data-correct="true">Your nurse reviews your ultrasound and blood work results each visit and tells you when to return based on your follicle growth</button>
+            <button class="quiz-option" data-correct="false">You come back every 7 days until ovulation</button>
+            <button class="quiz-option" data-correct="false">You decide on your own based on a home ovulation test</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> At each visit, the clinic measures the size of your follicles using ultrasound and checks your hormone levels through blood work. Based on how your follicles are growing, your nurse will tell you when to come back, which may be every other day or a few days later.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> Cycle monitoring is adjusted in real time. Your clinic tracks your follicle size and hormone levels at each visit, then schedules your next appointment based on how your body is responding.
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="quiz-nav">
@@ -82,7 +124,7 @@
     </div>
 
     <div class="quiz-score">
-      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 3.</p>
+      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 5.</p>
     </div>
 
   </div>
