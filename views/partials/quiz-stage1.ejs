@@ -4,7 +4,7 @@
   <p class="quiz-section_intro">Before moving on, see if you caught the key points from this stage.</p>
   
   <!-- Bootstrap Carousel wrapper -->
-  <div id="quizCarouselS1" class="carousel slide quiz-carousel" data-bs-interval="false" data-bs-wrap="false" data-bs-touch="true" data-total="5">
+  <div id="quizCarouselS1" class="carousel slide quiz-carousel" data-bs-interval="false" data-bs-wrap="false" data-bs-touch="true" data-total="6">
 
     <!-- Indicators -->
     <div class="carousel-indicators quiz-dots">
@@ -13,6 +13,7 @@
       <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="2" class="quiz-dot"></button>
       <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="3" class="quiz-dot"></button>
       <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="4" class="quiz-dot"></button>
+      <button type="button" data-bs-target="#quizCarouselS1" data-bs-slide-to="5" class="quiz-dot"></button>
     </div>
 
     <!-- All quiz slides live inside carousel-inner -->
@@ -124,6 +125,27 @@
         </div>
       </div>
 
+
+      <!-- Q6 -->
+      <div class="carousel-item">
+        <div class="quiz-card">
+          <p class="quiz-card_count">Question 6 of 6</p>
+          <p class="quiz-card_question">Which of the following factors could affect your eligibility for government-funded fertility treatments in Ontario?</p>
+          <div class="quiz-card_options">
+            <button class="quiz-option" data-correct="false">Your sexual orientation</button>
+            <button class="quiz-option" data-correct="false">Your family status</button>
+            <button class="quiz-option" data-correct="true">Your Ontario residency and OHIP card status</button>
+            <button class="quiz-option" data-correct="false">Your gender identity</button>
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--correct">
+            ✓ <strong>Correct.</strong> The only requirements are Ontario residency and a valid OHIP card. Sex, gender, sexual orientation, and family status are not considerations in determining eligibility. Whether you are pursuing parenthood on your own or with a partner, government-funded fertility services are open to you.
+          </div>
+          <div class="quiz-card_feedback quiz-card_feedback--wrong">
+            ✗ <strong>Not quite.</strong> Sexual orientation, gender identity, and family status do not affect your eligibility. The only factors that matter are Ontario residency and a valid OHIP card. Fertility services are open to all eligible Ontarians.
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Controls -->
@@ -134,7 +156,7 @@
 
     <!-- Score -->
     <div class="quiz-score">
-      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 5.</p>
+      <p class="quiz-score_text">You got <span class="quiz-score_num">0</span> out of 6.</p>
     </div>
 
   </div>
