@@ -17,7 +17,6 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs"); //using EJS
 
 // Middleware
-// app.use("/static", express.static(path.join(__dirname, "public"))); 
 app.use(app.locals.basePath + "/static", express.static(path.join(__dirname, "public"))); //set up path for static file
 app.use("/static", express.static(path.join(__dirname, "public")));
 

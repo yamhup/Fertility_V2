@@ -263,22 +263,22 @@ a.green-text:hover { text-decoration: underline; }
   font-size: 1rem;
 }
 .highlight-box strong { color: var(--orange-red); }
-.highlight-box__title {
+.highlight-box_title {
   color: var(--charcoal);
   margin-bottom: 0.6rem;
   font-size: 1.3rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.highlight-box__list {
+.highlight-box_list {
   margin: 0;
   padding-left: 1.2rem;
 }
-.highlight-box__list li {
+.highlight-box_list li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
-.highlight-box__list li:last-child { margin-bottom: 0; }
+.highlight-box_list li:last-child { margin-bottom: 0; }
 
 .initial-specialist-box {
   background: var(--white);
@@ -701,6 +701,7 @@ a.green-text:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 0 1rem;
 }
 
 .quiz-option {
@@ -720,8 +721,10 @@ a.green-text:hover { text-decoration: underline; }
 }
 
 .quiz-option:hover:not(:disabled) {
-  border-color: var(--navy-dark);
-  background: var(--sage-mist);
+  border: 1.5px solid var(--divider);
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 1.02rem;
 }
 
 .quiz-option.quiz-option--correct {

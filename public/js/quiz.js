@@ -62,15 +62,21 @@
 
 })();
 
-const carousel = document.getElementById('quizCarouselS1');
-const totalSlides = parseInt(carousel.dataset.total);
-const prevBtn = carousel.querySelector('[data-bs-slide="prev"]');
-const nextBtn = carousel.querySelector('[data-bs-slide="next"]');
 
-// Hide "Previous" on the first slide
-prevBtn.style.display = 'none';
+// Loop through every quiz carousel
+document.querySelectorAll('.quiz-carousel').forEach(function (carousel) {
 
-carousel.addEventListener('slid.bs.carousel', (e) => {
-  prevBtn.style.display = e.to === 0 ? 'none' : '';
-  nextBtn.style.display = e.to === totalSlides - 1 ? 'none' : '';
+  // Read how many questions this carousel has from data-total
+  var totalSlides = parseInt(carousel.getAttribute('data-total'), 10);
+
+  // Find the  buttons inside this carousel
+  var prevBtn = carousel.querySelector('[data-bs-slide="prev"]');
+  var nextBtn = carousel.querySelector('[data-bs-slide="next"]');
+
+  prevBtn.style.display = 'none';
+
+  carousel.addEventListener('slid.bs.carousel', function (e) {
+    prevBtn.style.display = e.to === 0 ? 'none' : '';
+    nextBtn.style.display = e.to === totalSlides - 1 ? 'none' : '';
+  });
 });
