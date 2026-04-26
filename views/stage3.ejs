@@ -36,17 +36,46 @@
     </div>
 </section>
 
+<%- include('partials/stage3-options') %>
+
 <section class="section-light">
 	<div class="container">
 
-		<div class="info-block">
-			<h4>IUI (Intrauterine Insemination)</h4>
+		<!-- Option1: Ovulation induction -->
+		<div class="info-block" id="ovulation-induction">
+			<h4>Ovulation Induction + Timed Intercourse</h4>
 			<p>
-				Before jumping to IUI, your doctor may first suggest a simpler approach: 
-				taking oral medication to stimulate ovulation, 
-				then timing intercourse around your fertile window. If that does not work 
-				after a few cycles, IUI is usually the next step.
+				This is often the first treatment your doctor will suggest. You take oral 
+				medication (such as Clomid or Letrozole) to stimulate your ovaries to 
+				produce one or more eggs, then time intercourse around your fertile window. 
+				Your clinic will monitor your cycle with ultrasounds and blood work to 
+				pinpoint the best timing.
 			</p>
+			<p>
+				This approach is commonly recommended for patients with irregular ovulation 
+				or unexplained infertility, as long as both fallopian tubes are open and 
+				sperm quality is normal. If it does not result in pregnancy after a few 
+				cycles, your doctor will typically recommend moving to IUI or IVF.
+			</p>
+
+			<div class="highlight-box">
+				<strong>Ovulation induction with timed intercourse is not funded under the OFP.</strong>
+				<ul class="highlight-box_list">
+					<li>Clinic visits, ultrasounds, and blood work for monitoring are covered 
+						by OHIP.</li>
+					<li>Medications are <b class="navy-text">not covered</b> and vary in cost 
+						depending on whether your doctor prescribes oral medication or 
+						injectable hormones.</li>
+					<li>Some private insurance plans may cover a portion of fertility 
+						medications. You can also claim these costs through the Ontario 
+						Fertility Treatment Tax Credit.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Option2: IUI -->
+		<div class="info-block" id="iui">
+			<h4>IUI (Intrauterine Insemination)</h4>
 			<p>
 				During an IUI procedure, sperm is collected, washed, and concentrated in 
 				the lab to select the healthiest cells. The processed sample is then 
@@ -77,42 +106,67 @@
 			</div>
 		</div>
 
-		<div class="info-block">
-			<h4>IVF — In Vitro Fertilization</h4>
-			<p>Eggs are retrieved from the ovaries after a period of ovarian stimulation with injectable medications, fertilized in a lab, and the resulting embryo is transferred to the uterus.</p>
+		<!-- Option3: IVF -->
+		<div class="info-block" id="ivf">
+			<h4>IVF (In Vitro Fertilization)</h4>
+			<p>
+				IVF is a more involved process where eggs are retrieved from your ovaries, 
+				fertilized with sperm in a lab, and the resulting embryo is transferred back 
+				into your uterus. It is typically recommended when IUI has not been successful, 
+				or when your diagnosis requires it.
+			</p>
+			<p>Here is what the process generally looks like:</p>
 			<ul>
-				<li>More involved process with daily injections over 10–14 days</li>
-				<li>Requires frequent monitoring (blood work + ultrasound)</li>
-				<li>Higher success rates than IUI, but also higher cost</li>
-				<li>May involve additional procedures: ICSI, PGT (genetic testing), frozen embryo transfer</li>
+				<li><strong>Ovarian stimulation:</strong> daily hormone injections for about 
+					10 to 14 days to stimulate your ovaries to produce multiple eggs. During 
+					this time, you will visit the clinic frequently for blood work and 
+					ultrasounds to monitor your response.</li>
+				<li><strong>Egg retrieval:</strong> a short procedure done under sedation 
+					where eggs are collected from your ovaries using a thin needle guided 
+					by ultrasound.</li>
+				<li><strong>Fertilization:</strong> your eggs are combined with sperm in the 
+					lab. In some cases, your doctor may recommend 
+					<span class="ohip-tip" data-bs-toggle="tooltip" 
+						title="Intracytoplasmic Sperm Injection: a single sperm is injected directly into each egg. Often recommended when sperm count or motility is low.">ICSI</span> 
+					to improve fertilization rates.</li>
+				<li><strong>Embryo development:</strong> fertilized eggs are monitored in the 
+					lab for 3 to 5 days as they develop into embryos.</li>
+				<li><strong>Embryo transfer:</strong> one embryo is placed into your uterus. 
+					Any remaining viable embryos can be frozen for future use.</li>
 			</ul>
-		</div>
 
-		<div class="highlight-box">
-			<strong>IVF is not the only option.</strong> In our focus group, every participant assumed IVF was the only fertility treatment available. In reality, your doctor may recommend IUI, medication-only cycles, or lifestyle changes first depending on your diagnosis. Treatment is not one-size-fits-all.
-		</div>
-
-		<div class="info-block">
-			<h4>Ontario Fertility Program (OFP)</h4>
-			<p>The Ontario government funds <strong>one IVF cycle per eligible patient per lifetime</strong> through the Ontario Fertility Program. This is something most people — including participants in our focus group — had no idea existed.</p>
-			<ul>
-				<li>Covers the cost of one IVF cycle at participating clinics</li>
-				<li>You must be an Ontario resident with a valid OHIP card</li>
-				<li>There are eligibility criteria — your clinic will help determine if you qualify</li>
-				<li>Waitlists apply and vary by clinic — some can be several months</li>
-				<li>The funded cycle covers the procedure itself; medications and additional services (e.g., genetic testing, freezing) are typically not covered</li>
-			</ul>
-			<p class="mt-2">Ask your clinic about OFP eligibility early. Knowing the waitlist length at different clinics may also factor into your clinic choice back in Stage 1.</p>
-		</div>
-
-		<div class="cost-box">
-			<strong>Cost note:</strong> Even with OFP funding, expect out-of-pocket costs for medications (which can range from hundreds to thousands of dollars), monitoring fees, and optional add-ons like genetic testing. Some private insurance plans cover a portion of fertility medications — check with your employer's benefits plan.
+			<div class="highlight-box">
+				<strong>The Ontario Fertility Program funds one IVF cycle per eligible patient per lifetime.</strong>
+				<ul class="highlight-box_list">
+					<li>You must be an Ontario resident with a valid OHIP card and 
+						<b class="navy-text">under the age of 43</b>.</li>
+					<li>The funded cycle includes monitoring, egg retrieval, sperm preparation, 
+						fertilization (including ICSI if needed), embryo development, fresh 
+						embryo transfer, and embryo freezing.</li>
+					<li>One cycle means one egg retrieval. If that retrieval produces multiple 
+						embryos, you can transfer them one at a time until all viable embryos 
+						from that cycle have been used.</li>
+					<li>Fertility <b class="navy-text">medications are not covered</b> and 
+						typically cost 
+						<a href="https://www.ontario.ca/page/get-fertility-treatments" target="_blank" 
+						   class="green-text" data-bs-toggle="tooltip" 
+						   title="Source: Ontario Ministry of Health">
+							<span class="orange-text">$5,000 per cycle</span></a>. 
+						Some clinics report costs up to $10,000+ depending on your protocol.</li>
+					<li>Genetic testing 
+						(<span class="ohip-tip" data-bs-toggle="tooltip" 
+							title="Pre-implantation Genetic Testing: screens embryos for chromosomal abnormalities or specific genetic conditions before transfer.">PGT</span>) 
+						and long-term embryo storage are also not covered.</li>
+					<li>If you act as a surrogate for another patient, you may receive one 
+						additional funded cycle.</li>
+				</ul>
+			</div>
 		</div>
 
 		<%- include('partials/quiz-stage3') %>
 		<div class="d-flex justify-content-between mt-5">
 			<a href="<%= basePath %>/stage2" class="btn btn-outline-sage">← Stage 2: Investigative Cycle</a>
-			<a href="<%= basePath %>/" class="btn btn-sage">Back to Home</a>
+			<a href="<%= basePath %>/" class="btn btn-outline-sage">Back to Home</a>
 		</div>
 	</div>
 </section>

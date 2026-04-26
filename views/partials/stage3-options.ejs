@@ -1,0 +1,62 @@
+<!-- Treatment Options Grid -->
+<section class="treatment-grid-section py-5">
+    <div class="container">
+        <h6 class="test-grid_group-label">Common treatment paths</h6>
+        <div class="treatment-grid">
+
+            <!-- Option 1: Ovulation Induction -->
+            <a href="#ovulation-induction" class="test-card-link">
+                <div class="test-card">
+                    <!-- <div class="test-card_circle test-card_circle--sage"> -->
+                    <div class="test-card_rect test-card_rect--sage">
+                        <img src="<%= basePath %>/static/images/medication.png" alt="Medication icon">
+                    </div>
+                    <div class="test-card__content">
+                        <h5 class="test-card_title test-card_title--sage">Ovulation Induction + Timed Intercourse</h5>
+                        <p class="test-card_desc">Oral medication to stimulate ovulation, 
+                            then naturally timed intercourse. Often the first approach your 
+                            doctor will suggest.</p>
+                        <p class="test-card_desc"><b class="navy-text">Not funded</b> by OFP. 
+                            Clinic visits covered by OHIP; medications out of pocket.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Option 2: IUI -->
+            <a href="#iui" class="test-card-link">
+                <div class="test-card">
+                    <div class="test-card_circle test-card_circle--green">
+                    <!-- <div class="test-card_rect test-card_rect--sage"> -->
+                        <img src="<%= basePath %>/static/images/YOUR_ICON.png" alt="IUI icon">
+                    </div>
+                    <div class="test-card__content">
+                        <h5 class="test-card_title test-card_title--green">IUI (Intrauterine Insemination)</h5>
+                        <p class="test-card_desc">Processed sperm is placed directly into the 
+                            uterus. Less invasive than IVF, can be done with or without 
+                            medications.</p>
+                        <p class="test-card_desc"><b class="green-text">Funded</b> by OFP. 
+                            No limit on cycles. Medications and sperm wash not covered.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Option 3: IVF -->
+            <a href="#ivf" class="test-card-link">
+                <div class="test-card">
+                    <div class="test-card_circle test-card_circle--navy">
+                    <!-- <div class="test-card_rect test-card_rect--sage"> -->
+                        <img src="<%= basePath %>/static/images/YOUR_ICON.png" alt="IVF icon">
+                    </div>
+                    <div class="test-card__content">
+                        <h5 class="test-card_title test-card_title--navy">IVF (In Vitro Fertilization)</h5>
+                        <p class="test-card_desc">Eggs retrieved, fertilized in a lab, embryo 
+                            transferred to uterus. Highest success rate but most involved.</p>
+                        <p class="test-card_desc"><b class="green-text">Funded</b> by OFP. 
+                            One cycle per lifetime. Medications not covered.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
