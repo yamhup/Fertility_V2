@@ -87,6 +87,7 @@
 .test-card_tag--navy     { background: rgba(21,68,122,0.15);   color: var(--navy-dark); }
 .test-card_tag--charcoal { background: rgba(46,51,50,0.15);    color: var(--charcoal); }
 
+
 .test-card_tag--optional {
   border: 1px dashed #999;
 }
@@ -208,3 +209,4 @@
 .test-card_rect--sage   { border-color: var(--sage); }
 .test-card_rect--green  { border-color: var(--green-title); }
 .test-card_rect--navy   { border-color: var(--navy-dark); }
+.test-card_rect--terra  { border-color: var(--terracotta); }
