@@ -162,10 +162,25 @@
 
 /* ─── STAGE 3: TREATMENT GRID (3 columns) ─── */
 
+
 .treatment-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+
+/* ---- Treatment grid: left-align text ---- */
+.treatment-grid .test-card {
+    text-align: left;
+}
+
+
+/* ---- OFP funding line: push to bottom with spacing ---- */
+.treatment-grid .test-card_desc:last-child {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--divider);
 }
 
 @media (max-width: 991px) {
@@ -210,3 +225,7 @@
 .test-card_rect--green  { border-color: var(--green-title); }
 .test-card_rect--navy   { border-color: var(--navy-dark); }
 .test-card_rect--terra  { border-color: var(--terracotta); }
+
+.info-block[id] {
+    scroll-margin-top: 120px;
+}
