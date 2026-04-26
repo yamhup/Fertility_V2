@@ -86,14 +86,23 @@
 		<!-- Option2: IUI -->
 		<div class="info-block" id="iui">
 			<h4>IUI (Intrauterine Insemination)</h4>
-			<p>
-				During an IUI procedure, sperm is collected, washed, and concentrated in 
-				the lab to select the healthiest cells. The processed sample is then 
-				injected directly into your uterus using a thin catheter, timed to 
-				coincide with ovulation. The procedure itself takes only a few minutes 
-				and is done at your fertility clinic. IUI may be done with or without 
-				ovulation-stimulating medications, depending on your diagnosis.
-			</p>
+			<div class="row align-items-start">
+				<div class="col-md-4 text-center mb-3 order-md-2">
+					<img src="<%= basePath %>/static/images/iui_treatment.png" 
+						alt="IUI illustration" 
+						style="max-width: 100%; max-height: 250px; border-radius: 8px;">
+				</div>
+				<div class="col-md-8 order-md-1">
+					<p>
+						During an IUI procedure, sperm is collected, washed, and concentrated in 
+						the lab to select the healthiest cells. The processed sample is then 
+						injected directly into your uterus using a thin catheter, timed to 
+						coincide with ovulation. The procedure itself takes only a few minutes 
+						and is done at your fertility clinic. IUI may be done with or without 
+						ovulation-stimulating medications, depending on your diagnosis.
+					</p>
+				</div>
+			</div>
 
 			<div class="highlight-box">
 				<strong>IUI is fully funded under the Ontario Fertility Program (OFP).</strong>
@@ -116,34 +125,44 @@
 			</div>
 		</div>
 
+
 		<!-- Option3: IVF -->
 		<div class="info-block" id="ivf">
 			<h4>IVF (In Vitro Fertilization)</h4>
-			<p>
-				IVF is a more involved process where eggs are retrieved from your ovaries, 
-				fertilized with sperm in a lab, and the resulting embryo is transferred back 
-				into your uterus. It is typically recommended when IUI has not been successful, 
-				or when your diagnosis requires it.
-			</p>
-			<p>Here is what the process generally looks like:</p>
-			<ul>
-				<li><strong>Ovarian stimulation:</strong> daily hormone injections for about 
-					10 to 14 days to stimulate your ovaries to produce multiple eggs. During 
-					this time, you will visit the clinic frequently for blood work and 
-					ultrasounds to monitor your response.</li>
-				<li><strong>Egg retrieval:</strong> a short procedure done under sedation 
-					where eggs are collected from your ovaries using a thin needle guided 
-					by ultrasound.</li>
-				<li><strong>Fertilization:</strong> your eggs are combined with sperm in the 
-					lab. In some cases, your doctor may recommend 
-					<span class="ohip-tip" data-bs-toggle="tooltip" 
-						title="Intracytoplasmic Sperm Injection: a single sperm is injected directly into each egg. Often recommended when sperm count or motility is low.">ICSI</span> 
-					to improve fertilization rates.</li>
-				<li><strong>Embryo development:</strong> fertilized eggs are monitored in the 
-					lab for 3 to 5 days as they develop into embryos.</li>
-				<li><strong>Embryo transfer:</strong> one embryo is placed into your uterus. 
-					Any remaining viable embryos can be frozen for future use.</li>
-			</ul>
+			<div class="row align-items-start">
+				<div class="col-md-4 text-center mb-3 order-md-2">
+					<img src="<%= basePath %>/static/images/ivf_treatment.png" 
+						alt="IVF illustration" 
+						style="max-width: 100%; max-height: 250px; border-radius: 8px;">
+				</div>
+				<div class="col-md-8 order-md-1">
+					<p>
+						IVF is a more involved process where eggs are retrieved from your ovaries, 
+						fertilized with sperm in a lab, and the resulting embryo is transferred back 
+						into your uterus. It is typically recommended when IUI has not been successful, 
+						or when your diagnosis requires it.
+					</p>
+					<p>Here is what the process generally looks like:</p>
+					<ul>
+						<li><strong>Ovarian stimulation:</strong> daily hormone injections for about 
+							10 to 14 days to stimulate your ovaries to produce multiple eggs. During 
+							this time, you will visit the clinic frequently for blood work and 
+							ultrasounds to monitor your response.</li>
+						<li><strong>Egg retrieval:</strong> a short procedure done under sedation 
+							where eggs are collected from your ovaries using a thin needle guided 
+							by ultrasound.</li>
+						<li><strong>Fertilization:</strong> your eggs are combined with sperm in the 
+							lab. In some cases, your doctor may recommend 
+							<span class="ohip-tip" data-bs-toggle="tooltip" 
+								title="Intracytoplasmic Sperm Injection: a single sperm is injected directly into each egg. Often recommended when sperm count or motility is low.">ICSI</span> 
+							to improve fertilization rates.</li>
+						<li><strong>Embryo development:</strong> fertilized eggs are monitored in the 
+							lab for 3 to 5 days as they develop into embryos.</li>
+						<li><strong>Embryo transfer:</strong> one embryo is placed into your uterus. 
+							Any remaining viable embryos can be frozen for future use.</li>
+					</ul>
+				</div>
+			</div>
 
 			<div class="highlight-box">
 				<strong>The Ontario Fertility Program funds one IVF cycle per eligible patient per lifetime.</strong>
@@ -159,8 +178,8 @@
 					<li>Fertility <b class="navy-text">medications are not covered</b> and 
 						typically cost 
 						<a href="https://www.ontario.ca/page/get-fertility-treatments" target="_blank" 
-						   class="green-text" data-bs-toggle="tooltip" 
-						   title="Source: Ontario Ministry of Health">
+						class="green-text" data-bs-toggle="tooltip" 
+						title="Source: Ontario Ministry of Health">
 							<span class="orange-text">$5,000 per cycle</span></a>. 
 						Some clinics report costs up to $10,000+ depending on your protocol.</li>
 					<li>Genetic testing 
