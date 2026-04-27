@@ -513,8 +513,12 @@ a.green-text:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+.qa-block_answer a.green-text {
+  color: var(--green-title);
+}
+
 .qa-block_answer a:hover {
-  color: var(--navy-dark);
+  color: var(--green-title);
   text-decoration: underline;
 }
 
