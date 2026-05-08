@@ -12,12 +12,16 @@
                         <img src="<%= basePath %>/static/images/ovulation_treatment.png" alt="Medication icon">
                     </div>
                     <div class="test-card__content">
-                        <h5 class="test-card_title test-card_title--sage">Ovulation Induction + Timed Intercourse</h5>
+                        <h6 class="test-card_title_2 test-card_title--sage">Ovulation Induction + Timed Intercourse</h6>
                         <p class="test-card_desc">Oral medication to stimulate ovulation, 
                             then naturally timed intercourse.</p>
                         <p class="test-card_desc"> Often the first approach your 
                             doctor will suggest.</p>
-                        <p class="test-card_desc"><b class="navy-text">Not funded</b> by OFP. 
+                        <p class="test-card_desc"><b class="navy-text">Not covered</b> by 
+                            <span class="ohip-tip" data-bs-toggle="tooltip" 
+                                title="Ontario Fertility Program: Ontario's government-funded program that covers eligible fertility treatments.">
+                                OFP
+                            </span>. 
                             Clinic visits covered by OHIP; medications out of pocket.</p>
                     </div>
                 </div>
@@ -30,12 +34,16 @@
                         <img src="<%= basePath %>/static/images/iui_treatment.png" alt="IUI icon">
                     </div>
                     <div class="test-card__content">
-                        <h5 class="test-card_title test-card_title--terra">IUI (Intrauterine Insemination)</h5>
+                        <h6 class="test-card_title_2 test-card_title--terra">IUI (Intrauterine Insemination)</h6>
                         <p class="test-card_desc">Processed sperm is placed directly into the 
                             uterus. Less invasive than IVF, can be done with or without 
                             medications.</p>
 
-                        <br><p class="test-card_desc"><b class="green-text">Funded</b> by OFP. 
+                        <br><p class="test-card_desc"><b class="green-text">Covered</b> by 
+                            <span class="ohip-tip" data-bs-toggle="tooltip" 
+                                title="Ontario Fertility Program: Ontario's government-funded program that covers eligible fertility treatments.">
+                                OFP
+                            </span>.
                             No limit on cycles. Medications and sperm wash not covered.</p>
                     </div>
                 </div>
@@ -48,15 +56,70 @@
                         <img src="<%= basePath %>/static/images/ivf_treatment.png" alt="IVF icon">
                     </div>
                     <div class="test-card__content">
-                        <h5 class="test-card_title test-card_title--navy">IVF (In Vitro Fertilization)</h5>
+                        <h6 class="test-card_title_2 test-card_title--navy">IVF (In Vitro Fertilization)</h6>
                         <p class="test-card_desc">Eggs retrieved, fertilized in a lab, embryo 
                             transferred to uterus. Highest success rate but most involved.</p>
-                        <p class="test-card_desc"><b class="green-text">Funded</b> by OFP. 
+                        <p class="test-card_desc"><b class="green-text">Covered</b> by 
+                            <span class="ohip-tip" data-bs-toggle="tooltip" 
+                                title="Ontario Fertility Program: Ontario's government-funded program that covers eligible fertility treatments.">
+                                OFP
+                            </span>. 
                             One cycle per lifetime. Medications not covered.</p>
                     </div>
                 </div>
             </a>
 
         </div>
+
+        <!--  other government funds -->
+        <h6 class="test-grid_group-label">Other funded services</h6>
+
+        <div class="treatment-grid treatment-grid--one">
+            <a href="#fertility-preservation" class="test-card-link">
+                <div class="test-card test-card--optional">
+                    <div class="test-card_rect test-card_rect--green">
+                        <img src="<%= basePath %>/static/images/preserve_fertility.png" 
+                            alt="Fertility preservation illustration"
+                            style="object-fit: contain; padding: 8px;">
+                    </div>
+                    <div class="test-card__content">
+                        <h6 class="test-card_title_2 test-card_title--orange">Fertility Preservation (medical necessity)</h6>
+                        <p class="test-card_desc">
+                            Freezing egg or sperm samples before medical treatment that may affect fertility. 
+                            Not everyone will need this.
+                        </p>
+                <p class="test-card_desc"><b class="green-text">Covered</b> by
+                    <span class="ohip-tip" data-bs-toggle="tooltip" 
+                        title="Ontario Fertility Program: Ontario's government-funded program that covers eligible fertility treatments.">
+                        OFP
+                    </span>. 
+                    One cycle per patient.
+                </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Costs & Financial Support -->
+        <h6 class="test-grid_group-label">Costs & Financial Support</h6>
+        <div class="treatment-grid treatment-grid--one">
+            <a href="#costs-financial-support" class="test-card-link">
+                <div class="test-card">
+                    <div class="test-card_rect test-card_rect--green">
+                        <img src="<%= basePath %>/static/images/out_of_pocket.png" 
+                            alt="Costs and financial support illustration"
+                          
+                        >
+                    </div>
+                    <div class="test-card__content">
+                        <h6 class="test-card_title_2 test-card_title--green">Costs & Financial Support</h6>
+                        <p class="test-card_desc">Estimated out-of-pocket costs for 
+                            IUI and IVF even with OFP funding, and how to claim 
+                            the Ontario Fertility Treatment Tax Credit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
 </section>

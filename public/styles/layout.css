@@ -280,7 +280,8 @@ a.green-text:hover { text-decoration: underline; }
 }
 .highlight-box_list li:last-child { margin-bottom: 0; }
 
-.initial-specialist-box {
+.initial-specialist-box,
+.out-of-pocket-box {
   background: var(--white);
   border: 2px solid var(--terracotta-light);
   border-radius: 10px;
@@ -833,6 +834,7 @@ a.green-text:hover { text-decoration: underline; }
   color: var(--green-title);
   font-size: 1.3rem;
 }
+
 
 
 
