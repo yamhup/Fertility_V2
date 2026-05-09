@@ -10,64 +10,65 @@
   <div class="stage1-steps_grid">
 
     <!-- Step 1: Understand -->
-    <div class="stage1-steps_col">
-      <div class="stage1-steps_pill stage1-steps_pill--sage"><span>1</span></div>
-      <div class="stage1-steps_icon">
-        <img src="<%= basePath %>/static/images/understand.png" alt="Understand Icon" width="36" height="36">
-      </div>
-      <div class="stage1-steps_label" style="color: var(--sage);">Understand</div>
-      <div class="stage1-steps_desc">
-        Learn the medical definition of infertility: 12 months of trying, or 6 months if you're 35+
-      </div>
-    </div>
+    <a href="#step-understand" class="stage1-steps_col">
+        <div class="stage1-steps_pill stage1-steps_pill--sage"><span>1</span></div>
+        <div class="stage1-steps_icon">
+          <img src="<%= basePath %>/static/images/understand.png" alt="Understand Icon" width="36" height="36">
+        </div>
+        <div class="stage1-steps_label" style="color: var(--sage);">Understand</div>
+        <div class="stage1-steps_desc">
+          Learn the medical definition of infertility: 12 months of trying, or 6 months if you're 35+
+        </div>
+
+    </a>
 
     <!-- Step 2: Research -->
-    <div class="stage1-steps_col">
-      <div class="stage1-steps_pill stage1-steps_pill--green"><span>2</span></div>
-      <div class="stage1-steps_icon">
-        <img src="<%= basePath %>/static/images/research.png" alt="Research Icon" width="36" height="36">
-      </div>
-      <div class="stage1-steps_label" style="color: var(--green-title);">Research</div>
-      <div class="stage1-steps_desc">
-        Browse the clinic list on this site. Compare location, travel time, reviews, and wait times
-      </div>
-    </div>
+    <a href="#step-research" class="stage1-steps_col">
+        <div class="stage1-steps_pill stage1-steps_pill--green"><span>2</span></div>
+        <div class="stage1-steps_icon">
+          <img src="<%= basePath %>/static/images/research.png" alt="Research Icon" width="36" height="36">
+        </div>
+        <div class="stage1-steps_label" style="color: var(--green-title);">Research</div>
+        <div class="stage1-steps_desc">
+          Browse the clinic list on this site. Compare location, travel time, reviews, and wait times
+        </div>
+    </a>
 
     <!-- Step 3: Book your GP -->
-    <div class="stage1-steps_col">
-      <div class="stage1-steps_pill stage1-steps_pill--orange"><span>3</span></div>
-      <div class="stage1-steps_icon">
-        <img src="<%= basePath %>/static/images/book_gp.png" alt="Book GP Icon" width="36" height="36">
-      </div>
-      <div class="stage1-steps_label" style="color: var(--orange-red);">Book your GP</div>
-      <div class="stage1-steps_desc">
-        Call your family doctor to book an appointment. Prepare your info and questions ahead of time
-      </div>
-    </div>
+    <a href="#step-prepare" class="stage1-steps_col">
+        <div class="stage1-steps_pill stage1-steps_pill--orange"><span>3</span></div>
+        <div class="stage1-steps_icon">
+          <img src="<%= basePath %>/static/images/book_gp.png" alt="Book GP Icon" width="36" height="36">
+        </div>
+        <div class="stage1-steps_label" style="color: var(--orange-red);">Book your GP</div>
+        <div class="stage1-steps_desc">
+          Call your family doctor to book an appointment. Prepare your info and questions ahead of time
+        </div>
+    </a>
 
     <!-- Step 4: Visit your GP -->
-    <div class="stage1-steps_col">
-      <div class="stage1-steps_pill stage1-steps_pill--terra"><span>4</span></div>
-      <div class="stage1-steps_icon">
-        <img src="<%= basePath %>/static/images/visit_gp.png" alt="Visit GP Icon" width="36" height="36">
-      </div>
-      <div class="stage1-steps_label" style="color: var(--terracotta);">Visit your GP</div>
-      <div class="stage1-steps_desc">
-        Tell your doctor about your situation and which clinic you'd like. Ask for a referral letter
-      </div>
-    </div>
+    <a href="#step-prepare" class="stage1-steps_col">
+        <div class="stage1-steps_pill stage1-steps_pill--terra"><span>4</span></div>
+        <div class="stage1-steps_icon">
+          <img src="<%= basePath %>/static/images/visit_gp.png" alt="Visit GP Icon" width="36" height="36">
+        </div>
+        <div class="stage1-steps_label" style="color: var(--terracotta);">Visit your GP</div>
+        <div class="stage1-steps_desc">
+          Tell your doctor about your situation and which clinic you'd like. Ask for a referral letter
+        </div>
+    </a>
 
     <!-- Step 5: Wait for the call -->
-    <div class="stage1-steps_col">
-      <div class="stage1-steps_pill stage1-steps_pill--navy"><span>5</span></div>
-      <div class="stage1-steps_icon">
-        <img src="<%= basePath %>/static/images/wait_for_call.png" alt="Wait For Call Icon" width="36" height="36">
-      </div>
-      <div class="stage1-steps_label" style="color: var(--navy-dark);">Wait for the call</div>
-      <div class="stage1-steps_desc">
-        The clinic contacts you. Choose your doctor, fill out forms, and schedule your first visit
-      </div>
-    </div>
+    <a href="#step-after-referral" class="stage1-steps_col">
+        <div class="stage1-steps_pill stage1-steps_pill--navy"><span>5</span></div>
+        <div class="stage1-steps_icon">
+          <img src="<%= basePath %>/static/images/wait_for_call.png" alt="Wait For Call Icon" width="36" height="36">
+        </div>
+        <div class="stage1-steps_label" style="color: var(--navy-dark);">Wait for the call</div>
+        <div class="stage1-steps_desc">
+          The clinic contacts you. Choose your doctor, fill out forms, and schedule your first visit
+        </div>
+    </a>
 
   </div>
 </section>
@@ -200,4 +201,9 @@
       align-self: start;
     }
   }
+
+  a.stage1-steps_col {
+    text-decoration: none;
+    color: inherit;
+}
 </style>
